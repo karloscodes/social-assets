@@ -1,0 +1,340 @@
+ 
+ 
+ 
+ UGC jobs for creators · Hoodiechamp 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {
+ "imports": {
+ "application": "/assets/application-2f71c6db.js",
+ "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+ "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+ "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+ "controllers/application": "/assets/controllers/application-3affb389.js",
+ "controllers/card_controller": "/assets/controllers/card_controller-6445f325.js",
+ "controllers/draft_poll_controller": "/assets/controllers/draft_poll_controller-aa5cd52d.js",
+ "controllers/hello_controller": "/assets/controllers/hello_controller-708796bd.js",
+ "controllers": "/assets/controllers/index-ee64e1f1.js",
+ "controllers/menu_controller": "/assets/controllers/menu_controller-2619344d.js",
+ "controllers/otp_controller": "/assets/controllers/otp_controller-6a3499af.js",
+ "controllers/player_controller": "/assets/controllers/player_controller-cf15ab9c.js",
+ "controllers/poster_controller": "/assets/controllers/poster_controller-b8b6c7fa.js",
+ "controllers/preview_controller": "/assets/controllers/preview_controller-199955f3.js",
+ "controllers/rail_controller": "/assets/controllers/rail_controller-31736afd.js",
+ "controllers/typewriter_controller": "/assets/controllers/typewriter_controller-a219bcc2.js"
+ }
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ 
+ 
+ For businesses 
+ 
+ For creators 
+ Sign in 
+ Create your profile 
+ 
+ 
+ 
+ 
+ 
+ 
+ For creators 
+ Find work. Name your price. 
+ 
+ Stop pitching. Brands post real briefs with a real budget, and you see only the ones that fit you. Send a price. Get picked. Get paid directly.
+ 
+ Free for creators, always. You keep 100% of your price. 
+ 
+ Create your profile 
+ See open briefs 
+ 
+ You talk to the brand. The brand pays you directly. 
+ 
+ 
+ Example profile 
+ 
+ 
+ 
+ 
+ Mia Makes 
+ Madrid, Spain 
+ 
+ Picked 14 times 
+ 
+ 
+ 
+ 4.9 
+ 12 reviews · 14 jobs done 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ "All three videos came two days early. The hooks were strong, and we ran them as ads the same week." 
+ 
+ 
+ Glow Skincare 
+ · 3 TikTok ads 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ We are in beta 
+ Hoodiechamp is new. Expect a hiccup here and there, and few requests at first. Create your profile now. We email you when a request fits you. 
+ 
+ 
+ 
+ 
+ 
+ Your videos are your portfolio. 
+ Add your TikTok, Instagram, and YouTube videos to your profile. A brand watches them before it picks. Your work does the selling. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Beauty &amp; skincare 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Food &amp; drink 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Fitness &amp; wellness 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Fashion &amp; accessories 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Home &amp; lifestyle 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ Step 1 
+ Show your work 
+ Add your videos, your profiles, and what you make. 
+ 
+ 
+ Step 2 
+ Get checked once 
+ A person looks at every new creator. Then you can answer briefs. 
+ 
+ 
+ Step 3 
+ Name your price 
+ Answer the briefs that fit, with a price and no pitch. A brand that wants you can invite you. 
+ 
+ 
+ 
+ 
+ 
+ When you finish a job 
+ You get a badge to share. 
+ 
+ When a brand picks you and confirms your work, we make you a card: your photo in a hoodie with the brand&#39;s logo on the chest. It says you are the creator that brand chose.
+ 
+ Post it on TikTok or Instagram to announce the deal. Your next brand sees who already picked you. Choose the black or the white hoodie. 
+ 
+ 
+ 
+ 
+ Example card 
+ 
+ 
+ 
+ Example card 
+ 
+ 
+ 
+ 
+ 
+ Why take the job here, and not in a direct message 
+ 
+ 
+ Every finished job builds your profile 
+ A verified review, one more finished job on your count, a badge to post, and your name on the page of the brand as its hoodiechamp. A deal in a direct message leaves you nothing to show the next brand. 
+ 
+ 
+ Finished jobs put you first 
+ Creators with more confirmed jobs here show first to a brand. Each job you finish makes the next one easier to win. 
+ 
+ 
+ You hold the final files until you are paid 
+ Deliver a preview first, with a watermark. Send the final files when the money arrives. The brand gets its review and its free hire again only after it says it paid. 
+ 
+ 
+ A record of every job 
+ The price, the date, the use of the videos, your delivery and the confirmation are kept with their time. Print it if you ever need proof. 
+ 
+ 
+ A way out 
+ You or the brand can cancel a pick, with a reason, until you deliver. 
+ 
+ 
+ Bring your own brands 
+ A brand that already knows you can ask for an invite, then send a brief that only you see. The second time, it costs the brand nothing. 
+ 
+ 
+ 
+ 
+ 
+ 
+ You see only what fits. 
+ Briefs show up when they match your kinds of work, categories, and languages. 
+ 
+ 
+ Every finished job adds a review. 
+ The brand you worked for writes it. It stays on your profile. 
+ 
+ 
+ You keep 100% of your price. 
+ We take no cut. The brand pays you directly, and joining costs you nothing. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ Small businesses say what they need. Creators send a price. You pick one. 
+ 
+ 
+ For businesses 
+ 
+ Ask for an invite 
+ How it works 
+ Brief templates 
+ Apps &amp; software Beauty &amp; skincare Fashion &amp; accessories Finance &amp; business Fitness &amp; wellness Food &amp; drink Gaming Home &amp; lifestyle Parents &amp; kids Pets Tech &amp; gadgets Travel 
+ 
+ 
+ 
+ For creators 
+ 
+ Create your profile 
+ Open briefs 
+ How it works 
+ 
+ 
+ 
+ Account 
+ 
+ Business sign in 
+ Creator sign in 
+ Ask for an invite 
+ Join as a creator 
+ 
+ 
+ 
+ 
+ © 2026 Hoodiechamp · Terms 
+ 
+ The brand pays you directly. Your money never passes through us. 
+ Español 
+ 
+ 
+ 
+ 
+ 
+ 

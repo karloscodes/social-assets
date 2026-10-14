@@ -1,0 +1,200 @@
+ 
+ 
+ 
+ Terms 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {
+ "imports": {
+ "application": "/assets/application-2f71c6db.js",
+ "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+ "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+ "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+ "controllers/application": "/assets/controllers/application-3affb389.js",
+ "controllers/card_controller": "/assets/controllers/card_controller-6445f325.js",
+ "controllers/draft_poll_controller": "/assets/controllers/draft_poll_controller-aa5cd52d.js",
+ "controllers/hello_controller": "/assets/controllers/hello_controller-708796bd.js",
+ "controllers": "/assets/controllers/index-ee64e1f1.js",
+ "controllers/menu_controller": "/assets/controllers/menu_controller-2619344d.js",
+ "controllers/otp_controller": "/assets/controllers/otp_controller-6a3499af.js",
+ "controllers/player_controller": "/assets/controllers/player_controller-cf15ab9c.js",
+ "controllers/poster_controller": "/assets/controllers/poster_controller-b8b6c7fa.js",
+ "controllers/preview_controller": "/assets/controllers/preview_controller-199955f3.js",
+ "controllers/rail_controller": "/assets/controllers/rail_controller-31736afd.js",
+ "controllers/typewriter_controller": "/assets/controllers/typewriter_controller-a219bcc2.js"
+ }
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ 
+ 
+ For businesses 
+ Price 
+ For creators 
+ Sign in 
+ Ask for an invite 
+ 
+ 
+ 
+ 
+ 
+ Terms 
+ The short version: we list and we connect. The deal, the work, and the money are between the brand and the creator. 
+ Last changed on October 13, 2026. 
+ 
+ 
+ 1. What Hoodiechamp is 
+ Hoodiechamp is a place where a brand posts a brief and creators answer with a price. We list briefs and creator profiles, and we connect a brand with the creators it picks. That is all we do. We are not an agency, an employer, an agent, or a party to any deal made here. 
+ 
+ 
+ 2. The deal is between the brand and the creator 
+ When a brand picks a creator, the two of them make a deal with each other. They agree on the details, the files, the dates, and the payment, outside Hoodiechamp. We do not hold money and we do not move files. We do not check the work, promise its quality, or promise that it arrives. We do not promise that a brand pays or that a creator delivers. A disagreement about a deal, the work, the payment, or the use of the videos is between the brand and the creator. We do not settle it and we are not responsible for it. 
+ 
+ 
+ 3. What you are responsible for 
+ What you post is yours, and it must be true: your brief, your profile, your audience numbers, your videos, your reviews. A brand answers for its product, its advertising claims, and the way it uses the videos. A creator answers for the work they deliver and for the rights to everything in it. You follow the law of your country, including the rules for advertising and for taxes on what you earn or pay. 
+ 
+ 
+ 4. Your account 
+ One account is one role: a brand or a creator. A person approves every creator before they can answer a brief. We can refuse or remove an account that breaks these terms, lies, or harms other people here. You must be 18 or older. 
+ 
+ 
+ 5. Reviews and the champ card 
+ Only a brand that picked a creator and confirmed the work can review it. A review must be honest and about the work. A creator can post a card that names the brand that picked them, only when the brand agreed to it at the pick, and after the brand confirmed the work. A brand that turned its public page on shows there the creators it finished a job with, as its hoodiechamps. 
+ 
+ 
+ 6. Reports 
+ You can report a brief, a creator, or a review that breaks these terms. A person reads every report. We can remove content or an account. We do not act as a judge between a brand and a creator. 
+ 
+ 
+ 7. Fair play 
+ A pick is a promise. The business pays the price it picked, and the creator delivers the work they offered. Either one can cancel a pick, with a reason, until the work is delivered. Confirm the work only after you paid for it. A business that confirms work it did not pay for breaks these terms. Do not use the work before you paid for it. Do not ask for free work as a test. Do not post a review of a job that did not happen. We can remove an account that cancels picks again and again, does not pay, or does not deliver. A creator who was not paid, or a business that got no work, can report it. 
+ 
+ 
+ 8. Advice for creators on getting paid 
+ This is advice, not a rule. We do not hold the money, so we can not get it back for you. Deliver a preview first: a version with a watermark, or in low quality. Send the final files when the money arrives. For a large job, ask for a part of the price before you start. Keep the deal email: it states the price, the date, and the use of the videos. 
+ 
+ 
+ 9. The record of a job 
+ We keep a record of each job: the proposal, the notes, the pick, a cancelled pick and its reason, the delivery and its links, the confirmation, and the review, each with its time. The two people of the job can read it and print it. The record shows what was done on Hoodiechamp. It is not proof that money moved, because we never see the money. &quot;Confirmed&quot; means the brand said the work is done and that it paid. 
+ 
+ 
+ 10. The price 
+ Creators pay nothing. A brand pays the price shown on the site for each pick. Two creators on one brief are two picks. A brand keeps the price it joined at. A pick is free in the first year of a brand that joined with an invite. A pick is also free when a brand hires again a creator who already finished a job for it here. The fee of a cancelled pick is not returned. The brand gets one free pick in its place. Today we do not charge this fee. 
+ 
+ 
+ 11. What we promise, and the limit of what we owe 
+ We work to keep Hoodiechamp up and running, and we do our best to connect each brand with the creators who fit its brief. What we can not guarantee is the result: that a brand finds the creator it wants, or that a creator wins a job. That depends on the two of them. As far as the law allows, we are not liable for a loss that comes from a deal, from the work, from a payment, or from what another person does here. Nothing in these terms takes away a right the law gives you that can not be taken away. 
+ 
+ 
+ 12. Changes 
+ We can change these terms. When a change matters, we tell you by email before it applies. 
+ 
+ 
+ Questions about these terms: [email&#160;protected] . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ Small businesses say what they need. Creators send a price. You pick one. 
+ 
+ 
+ For businesses 
+ 
+ Ask for an invite 
+ How it works 
+ Brief templates 
+ Apps &amp; software Beauty &amp; skincare Fashion &amp; accessories Finance &amp; business Fitness &amp; wellness Food &amp; drink Gaming Home &amp; lifestyle Parents &amp; kids Pets Tech &amp; gadgets Travel 
+ 
+ 
+ 
+ For creators 
+ 
+ Create your profile 
+ Open briefs 
+ How it works 
+ 
+ 
+ 
+ Account 
+ 
+ Business sign in 
+ Creator sign in 
+ Ask for an invite 
+ Join as a creator 
+ 
+ 
+ 
+ 
+ © 2026 Hoodiechamp · Terms 
+ 
+ Your money never passes through us. You pay the creator yourself. 
+ Español 
+ 
+ 
+ 
+ 
+ 
+ 

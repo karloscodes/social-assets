@@ -1,0 +1,151 @@
+{
+  "id": "suppyhq-v1",
+  "brand": {
+    "name": "SuppyHQ",
+    "url": "suppyhq.com",
+    "cta": "Start free",
+    "logo": "suppyhq/logo.svg",
+    "colors": {
+      "bg": "#f5f5f4",
+      "ink": "#1c1917",
+      "muted": "#57534e",
+      "accent": "#f97316",
+      "accentDark": "#ea580c",
+      "card": "#ffffff"
+    },
+    "mascot": {
+      "name": "Suppy",
+      "body": "#1c1917",
+      "accent": "#f97316",
+      "face": "#f5f5f4"
+    }
+  },
+  "voice": {
+    "engine": "kokoro",
+    "voice": "af_heart",
+    "speed": 1.0,
+    "gap": 0.18,
+    "lexicon": {
+      "SuppyHQ": "sˈʌpi ˈAʧ kjˈu"
+    },
+    "captionMap": [
+      [
+        "Twenty-nine dollars",
+        "$29"
+      ],
+      [
+        "SuppyHQ dot com",
+        "suppyhq.com"
+      ],
+      [
+        "forty",
+        "40"
+      ],
+      [
+        "ten",
+        "10"
+      ]
+    ]
+  },
+  "scenes": [
+    {
+      "type": "kinetic-text",
+      "dark": true,
+      "vo": "A customer asked for a refund. It's under forty cold pitches.",
+      "lines": [
+        "A customer asked",
+        "for a refund.",
+        "It's under",
+        "40 cold pitches."
+      ],
+      "accentWords": [
+        "refund.",
+        "40"
+      ],
+      "instant": true
+    },
+    {
+      "type": "illustration",
+      "art": "overflowing-inbox",
+      "vo": "Pitches from people you've never met.",
+      "labels": [
+        "Partnership?",
+        "Lead list",
+        "Guest post?",
+        "Quick collab",
+        "Cold pitch",
+        "SEO offer"
+      ],
+      "buried": "Refund request"
+    },
+    {
+      "type": "diagram",
+      "diagram": "sort",
+      "vo": "SuppyHQ moves the pitches to Spam, and puts the refund on top.",
+      "total": 44,
+      "spam": 40,
+      "spamLabel": "Spam",
+      "topLabel": "Refund · can't wait"
+    },
+    {
+      "type": "mascot",
+      "pose": "sort",
+      "vo": "Refunds, upset customers, failing payments. Those go first.",
+      "chips": [
+        "Refund",
+        "Upset customer",
+        "Failing payment"
+      ]
+    },
+    {
+      "type": "product-cut",
+      "image": "suppyhq/needs-you.png",
+      "vo": "Everything else waits its turn.",
+      "focus": 0.0
+    },
+    {
+      "type": "diagram",
+      "diagram": "reply-link",
+      "vo": "Answer it once. Next time, your old answer is ready.",
+      "question": "How do I export my data?",
+      "answer": "Settings → Export. It builds a zip and emails you the link.",
+      "badge": "Answered before"
+    },
+    {
+      "type": "product-cut",
+      "image": "suppyhq/suggested.png",
+      "vo": "You still hit send.",
+      "focus": -0.2
+    },
+    {
+      "type": "diagram",
+      "diagram": "permission-gate",
+      "vo": "Your AI agent can draft. Sending is a separate permission.",
+      "agent": "Your AI agent",
+      "draft": "Draft",
+      "send": "Send",
+      "owner": "Only you"
+    },
+    {
+      "type": "kinetic-text",
+      "vo": "Twenty-nine dollars a month. Free until you've talked to more than ten people.",
+      "lines": [
+        "$29/mo",
+        "flat.",
+        "Free until you've talked",
+        "to more than 10 people."
+      ],
+      "accentWords": [
+        "$29/mo",
+        "Free"
+      ],
+      "big": "$29/mo"
+    },
+    {
+      "type": "end-card",
+      "vo": "Start free at SuppyHQ dot com.",
+      "pose": "celebrate",
+      "tagline": "Customer support is your job. Typing the same answer isn't."
+    }
+  ]
+}

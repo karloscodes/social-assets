@@ -1,0 +1,180 @@
+{
+  "id": "suppyhq-v3",
+  "brand": {
+    "name": "SuppyHQ",
+    "url": "suppyhq.com",
+    "cta": "Start free",
+    "logo": "suppyhq/logo.svg",
+    "colors": {
+      "bg": "#f5f5f4",
+      "ink": "#1c1917",
+      "muted": "#57534e",
+      "accent": "#f97316",
+      "accentDark": "#ea580c",
+      "card": "#ffffff"
+    },
+    "mascot": {
+      "name": "Suppy",
+      "body": "#1c1917",
+      "accent": "#f97316",
+      "face": "#f5f5f4"
+    }
+  },
+  "voice": {
+    "engine": "kokoro",
+    "voice": "af_heart",
+    "speed": 1.0,
+    "gap": 0.18,
+    "lexicon": {
+      "SuppyHQ": "sˈʌpi ˈAʧ kjˈu"
+    },
+    "captionMap": [
+      [
+        "Twenty-nine dollars",
+        "$29"
+      ],
+      [
+        "SuppyHQ dot com",
+        "suppyhq.com"
+      ],
+      [
+        "thirty seconds",
+        "30 seconds"
+      ],
+      [
+        "ten",
+        "10"
+      ]
+    ],
+    "perSentence": true,
+    "mergeShorterThan": 20,
+    "sentenceGap": 0.28,
+    "bridgePause": 0.35,
+    "tail": 0.95,
+    "endMin": 2.4
+  },
+  "scenes": [
+    {
+      "type": "kinetic-text",
+      "dark": true,
+      "vo": "You open your inbox, and somewhere in there, a customer wants a refund.",
+      "lines": [
+        "You open your inbox.",
+        "Somewhere in there,",
+        "a customer wants",
+        "a refund."
+      ],
+      "accentWords": [
+        "refund."
+      ],
+      "instant": true
+    },
+    {
+      "type": "illustration",
+      "art": "overflowing-inbox",
+      "vo": "It's just buried under a pile of pitches from this morning.",
+      "labels": [
+        "Partnership?",
+        "Lead list",
+        "Guest post?",
+        "Quick collab",
+        "Cold pitch",
+        "SEO offer"
+      ],
+      "buried": "Refund request"
+    },
+    {
+      "type": "diagram",
+      "diagram": "sort",
+      "vo": "So here's the fix. The pitches go to Spam, and the refund goes on top.",
+      "total": 44,
+      "spam": 40,
+      "spamLabel": "Spam",
+      "topLabel": "Refund · can't wait",
+      "bridge": true
+    },
+    {
+      "type": "mascot",
+      "pose": "sort",
+      "vo": "Anything that can't wait, like an upset customer, jumps the line.",
+      "chips": [
+        "Refund",
+        "Upset customer",
+        "Failing payment"
+      ]
+    },
+    {
+      "type": "diagram",
+      "diagram": "paid-context",
+      "bridge": true,
+      "vo": "Here's why: it knows who paid you. Plan and lifetime value sit next to every email. A failing payment jumps up on its own.",
+      "customer": {
+        "initials": "SC",
+        "name": "Sarah Chen",
+        "email": "sarah@acme.com",
+        "status": "Active subscriber",
+        "plan": "Acme Pro",
+        "recurring": "$19/mo",
+        "ltv": "$66"
+      },
+      "rows": [
+        "How do I export my data?",
+        "Feature idea: dark mode"
+      ],
+      "failing": "Failing payment",
+      "readOnly": "Read-only keys · can't charge or refund"
+    },
+    {
+      "type": "diagram",
+      "diagram": "reply-link",
+      "vo": "And the second time? Your old answer's ready.",
+      "question": "How do I export my data?",
+      "answer": "Settings → Export. It builds a zip and emails you the link.",
+      "badge": "Answered before",
+      "bridge": true
+    },
+    {
+      "type": "product-cut",
+      "image": "suppyhq/suggested.png",
+      "vo": "So you just look it over, and hit send.",
+      "focus": -0.2
+    },
+    {
+      "type": "diagram",
+      "diagram": "permission-gate",
+      "vo": "Your AI can draft, but sending is a separate permission, and every send waits thirty seconds so you can cancel.",
+      "agent": "Your AI agent",
+      "draft": "Draft",
+      "send": "Send",
+      "owner": "You decide",
+      "bridge": true,
+      "ownerNote": "to cancel",
+      "noteCue": "30"
+    },
+    {
+      "type": "kinetic-text",
+      "vo": "The price? Twenty-nine dollars a month, flat. Free until you've talked to more than ten people. No card.",
+      "lines": [
+        "$29/mo",
+        "flat.",
+        "Free until you've talked",
+        "to more than 10 people.",
+        "No card."
+      ],
+      "accentWords": [
+        "$29/mo",
+        "Free",
+        "No card."
+      ],
+      "big": "$29/mo",
+      "bridge": true
+    },
+    {
+      "type": "end-card",
+      "vo": "Start free at SuppyHQ dot com.",
+      "pose": "celebrate",
+      "tagline": "Customer support is your job. Typing the same answer isn't.",
+      "captions": false
+    }
+  ]
+}

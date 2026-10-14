@@ -1,0 +1,322 @@
+{
+  "id": "lognorth-grokbot-v2",
+  "brand": {
+    "name": "LogNorth",
+    "url": "lognorth.com",
+    "cta": "Install free",
+    "logo": "lognorth/logo.svg",
+    "theme": "dark",
+    "wordmark": {
+      "text": "lognorth",
+      "brackets": true,
+      "mono": true
+    },
+    "colors": {
+      "bg": "#0c0a09",
+      "ink": "#fafaf9",
+      "muted": "#d6d3d1",
+      "accent": "#a3e635",
+      "accentDark": "#84cc16",
+      "card": "#1c1917",
+      "onAccent": "#1c1917",
+      "error": "#e11d48",
+      "line": "#292524",
+      "border": "#44403c",
+      "dim": "#a8a29e"
+    },
+    "mascot": null
+  },
+  "voice": {
+    "engine": "kokoro",
+    "voice": "af_heart",
+    "speed": 1.0,
+    "gap": 0.18,
+    "lexicon": {
+      "LogNorth": "lˈɔɡnˌɔɹθ",
+      "MCP": "ˌɛmsˌipˈi",
+      "Grok": "ɡɹˈɑk",
+      "SuppyHQ": "sˈʌpi ˈAʧ kjˈu"
+    },
+    "captionMap": [
+      [
+        "LogNorth dot com",
+        "lognorth.com"
+      ]
+    ],
+    "perSentence": true,
+    "mergeShorterThan": 20,
+    "sentenceGap": 0.28,
+    "bridgePause": 0.35,
+    "tail": 0.75,
+    "endMin": 2.4
+  },
+  "scenes": [
+    {
+      "type": "kinetic-text",
+      "dark": true,
+      "instant": true,
+      "vo": "Alert at three in the morning. SuppyHQ can't send replies. You're asleep.",
+      "lines": [
+        "Alert at 3am.",
+        "SuppyHQ can't",
+        "send replies.",
+        "You're asleep."
+      ],
+      "accentWords": [
+        "3am.",
+        "can't"
+      ]
+    },
+    {
+      "type": "diagram",
+      "diagram": "autofix-loop",
+      "beat": 1,
+      "bridge": true,
+      "nodes": [
+        {
+          "label": "alert",
+          "steps": "01 02"
+        },
+        {
+          "label": "investigate",
+          "steps": "03"
+        },
+        {
+          "label": "fix + PR",
+          "steps": "04 05"
+        },
+        {
+          "label": "ship + verify",
+          "steps": "06 07 08"
+        }
+      ],
+      "clock": [
+        "03:12",
+        "03:12"
+      ],
+      "vo": "So LogNorth wakes a Grok Bot routine instead, through a webhook.",
+      "alert": {
+        "title": "[suppyhq] Spike on /replies",
+        "message": "8.1% errors, normally 1.0%"
+      },
+      "webhookNote": "POST to the routine",
+      "routine": "grok bot · routine lognorth-oncall",
+      "botLine": "on it. no one asked.",
+      "cues": {
+        "alert": "so",
+        "webhook": "wakes",
+        "bot": "routine"
+      },
+      "app": "suppyhq",
+      "appLogo": "suppyhq/logo.svg"
+    },
+    {
+      "type": "diagram",
+      "diagram": "autofix-loop",
+      "beat": 2,
+      "transitionIn": "fade",
+      "nodes": [
+        {
+          "label": "alert",
+          "steps": "01 02"
+        },
+        {
+          "label": "investigate",
+          "steps": "03"
+        },
+        {
+          "label": "fix + PR",
+          "steps": "04 05"
+        },
+        {
+          "label": "ship + verify",
+          "steps": "06 07 08"
+        }
+      ],
+      "clock": [
+        "03:12",
+        "03:13"
+      ],
+      "vo": "The bot reads the failing requests over MCP. The logs, the trace, and the commit just before.",
+      "runTitle": "grok bot · investigating",
+      "mcpNote": "read-only",
+      "tools": [
+        [
+          "lognorth.endpoint_timeline",
+          "flat at 1% until 03:00, then 8%"
+        ],
+        [
+          "lognorth.search_logs",
+          "212 failures, Net::ReadTimeout",
+          true
+        ],
+        [
+          "lognorth.get_event 48213",
+          "outbound_mail.rb:41"
+        ],
+        [
+          "git log --since 02:00",
+          "a3f9c1e: mail timeout to 2s"
+        ]
+      ],
+      "cues": {
+        "t0": "reads",
+        "t1": "logs",
+        "t2": "trace",
+        "t3": "commit"
+      },
+      "pause": 0.2,
+      "toolScale": 1.22
+    },
+    {
+      "type": "diagram",
+      "diagram": "autofix-loop",
+      "beat": 3,
+      "transitionIn": "fade",
+      "nodes": [
+        {
+          "label": "alert",
+          "steps": "01 02"
+        },
+        {
+          "label": "investigate",
+          "steps": "03"
+        },
+        {
+          "label": "fix + PR",
+          "steps": "04 05"
+        },
+        {
+          "label": "ship + verify",
+          "steps": "06 07 08"
+        }
+      ],
+      "clock": [
+        "03:13",
+        "03:14"
+      ],
+      "vo": "It writes the fix with a test, and opens a pull request with the evidence.",
+      "file": "app/services/outbound_mail.rb",
+      "branch": "new branch",
+      "minus": "open_timeout: 2",
+      "plus": "open_timeout: 30",
+      "test": "fails without the fix",
+      "pr": "#218",
+      "prTitle": "Restore the 30s mail timeout",
+      "evidence": "evidence: event 48213 · 8% vs 1% · a3f9c1e",
+      "cues": {
+        "fix": "fix",
+        "test": "test",
+        "pr": "pull",
+        "ev": "evidence"
+      },
+      "pause": 0.2
+    },
+    {
+      "type": "diagram",
+      "diagram": "autofix-loop",
+      "beat": 4,
+      "transitionIn": "fade",
+      "nodes": [
+        {
+          "label": "alert",
+          "steps": "01 02"
+        },
+        {
+          "label": "investigate",
+          "steps": "03"
+        },
+        {
+          "label": "fix + PR",
+          "steps": "04 05"
+        },
+        {
+          "label": "ship + verify",
+          "steps": "06 07 08"
+        }
+      ],
+      "clock": [
+        "03:18",
+        "03:36"
+      ],
+      "vo": "If you've given it merge and deploy, it ships. Then it watches LogNorth until the alert clears.",
+      "chips": [
+        "CI passed",
+        "merge",
+        "deploy"
+      ],
+      "leash": "only with access you give it · or it waits at the PR",
+      "chartLabel": "/replies error rate",
+      "verify": "0.9% since the deploy",
+      "cleared": "alert clears",
+      "cues": {
+        "ship": "merge",
+        "deploy": "ships",
+        "watch": "watches",
+        "clear": "clears"
+      },
+      "pause": 0.2
+    },
+    {
+      "type": "diagram",
+      "diagram": "autofix-loop",
+      "beat": 5,
+      "transitionIn": "fade",
+      "morning": true,
+      "bridge": true,
+      "nodes": [
+        {
+          "label": "alert",
+          "steps": "01 02"
+        },
+        {
+          "label": "investigate",
+          "steps": "03"
+        },
+        {
+          "label": "fix + PR",
+          "steps": "04 05"
+        },
+        {
+          "label": "ship + verify",
+          "steps": "06 07 08"
+        }
+      ],
+      "clock": [
+        "03:36",
+        "07:30"
+      ],
+      "clockEnd": 40,
+      "vo": "Fixed by breakfast. You wake up to a closed incident.",
+      "reportTitle": "grok bot · posted 03:36",
+      "report": [
+        "/replies failed 8% from 03:00, normally 1%.",
+        "a3f9c1e cut the mail timeout to 2s.",
+        "#218 restored 30s, deployed 03:21.",
+        "0.9% since."
+      ],
+      "stats": [
+        [
+          "24 min",
+          "alert to verified fix"
+        ],
+        [
+          "0",
+          "people paged"
+        ]
+      ],
+      "stamp": "CLOSED",
+      "cues": {
+        "fixed": "fixed",
+        "closed": "closed"
+      }
+    },
+    {
+      "type": "end-card",
+      "vo": "Your first app is free. Install it at LogNorth dot com.",
+      "pose": "none",
+      "tagline": "Alert at 3am. Fixed by breakfast.",
+      "captions": false
+    }
+  ]
+}

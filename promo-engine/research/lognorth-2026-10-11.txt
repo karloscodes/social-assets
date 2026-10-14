@@ -1,0 +1,1041 @@
+# LogNorth live site, fetched 2026-10-11 08:18 CEST with curl, Cache-Control: no-cache + cache-busting query
+# pages: / /agents/ /uptime/ /why/
+
+===== index.html =====
+LogNorth · Logs, errors and uptime on a $5 box
+[
+lognorth
+]
+why
+features
+agents
+docs
+pricing
+Install · free
+menu
+why
+features
+agents
+docs
+pricing
+v0.28.0 · 10 releases this week
+release notes
+→
+Free
+for
+your first app.
+Self-hosted logging, with errors, alerts, and uptime built in. Your coding agent reads it too. No per-GB meter. $99 once for unlimited apps.
+Install LogNorth · free
+Open demo →
+$
+curl -fsSL lognorth.com/install | sudo bash -s logs.example.com
+[c] copy
+9.9k downloads
+·
+works with AI agents →
+tail -f · rails-demo
+live
+05:00:56.997
+POST
+/checkout
+201 · 850ms
+05:00:57.138
+Loading user profile
+21ms
+05:00:57.280
+Fetching cart items
+40ms
+05:00:57.563
+Creating payment intent
+7ms
+05:00:57.941
+GET
+/projects/42/todos
+200 · 38ms
+05:00:58.012
+POST
+/checkout
+500 · 1204ms
+05:00:58.013
+Stripe::CardError  Your card was declined.
+payment_service.rb:67
+05:00:58.230
+POST
+/checkout
+500 · 1188ms
+05:00:58.231
+Stripe::CardError  Your card was declined.
+72×
+ALERT
+rails-demo — spike: /checkout at 18.2%
+→ telegram
+[01] the problem
+Stop paying more to watch your app than to run it.
+Hosted log platforms store and query billions of lines from thousands of customers at once. That scale is the hard part. It is also the part you don't have. You pay for it anyway.
+diff hosted.conf self-hosted.conf
+@@ where your logs live @@
+thousands of tenants, billions of lines
+metered by the gigabyte
+alert rules you tune by hand
+one more dashboard to check
+one tenant: you
+one SQLite file on a $5 box
+alerts from each endpoint's own history
+free for one app, $99 once for more
+Why hosted logging costs what it does →
+[02] what it does
+Logs do all of it.
+One stream of logs does every job: errors, alerts, and what your coding agent reads. Uptime is a ping every minute. No second system.
+man lognorth
+LOGNORTH(1)
+Self-hosted logging
+LOGNORTH(1)
+NAME
+lognorth - one stream of logs that alerts, monitors, and debugs. Your coding agent reads it too.
+THE LOGS
+alert
+Compares each endpoint with its own history: this hour against the same hour on earlier days. Fires when it's actually wrong.
+monitor
+An outage shows up as silence: the traffic that stopped.
+debug
+Logs and errors in one stream. 1 issue, not 1,000 duplicates.
+connect
+Each issue says how many users it hit, the release it came in, and which error failed first in the same requests. Every deploy is a dashed line on the charts.
+replay
+An error shows what its user did in the 30 minutes before it: the steps to reproduce.
+ask
+Claude Code or Cursor reads production over MCP and hands you the fix.
+read
+Plain lines. Errors in red. Context attached. No grep.
+keep
+No per-GB meter, so you log everything. You pick retention, up to forever.
+THE PING
+uptime
+Pings your URL every minute. Alerts after 3 misses in a row, and again when it's back. 30 days of pings: when it failed, and why.
+cause
+The down alert names the errors that jumped as the app went down. An error that happens all day is not a cause, so it stays out.
+COMMANDS
+north tail
+your production log, live, in the terminal
+north top
+endpoints, alerts, and uptime, like htop
+ctrl+b, :
+every screen in the app, from the keyboard. ? lists the keys
+:theme amber
+north, catppuccin, gruvbox, nord, dracula, or a 1983 amber terminal. Press t on this page
+ALERTS GO TO
+telegram
+bot token + chat id
+webhook
+a JSON POST per alert: Grok Bot, Slack, your own endpoint
+ntfy.sh
+free push, no account
+email
+your own SMTP
+SDKS
+typescript
+go
+rails
+opentelemetry
+Another language? Follow the
+client protocol
+, or run
+/lognorth:integrate
+in your coding agent and it writes the client.
+SEE ALSO
+agents(7)
+why(7)
+uptime(7)
+grok-bot(7)
+docs(1)
+One thing that isn't a log: a ping to your URL every minute. Click a failed minute and you get its errors.
+uptime · shop.example.com
+99.93%
+· 24h
+15:15–15:30
+15 pings ·
+2 failed
+· avg 91ms
+HTTP 503
+×2
+24h ago
+12h
+now
+up 84ms
+· last ping 12s ago
+last failure
+15:21
+·
+503 · 1,204ms
+[03] autofix
+Alert at 3am. Fixed by breakfast.
+A LogNorth alert starts a Grok Bot routine through the webhook. The bot reads the failing requests over MCP, writes the fix with a test, and opens a pull request. LogNorth watches production until the alert clears. You wake up to a closed incident.
+The loop: LogNorth alerts, a webhook wakes Grok Bot, it investigates, fixes, opens a pull request, ships, and LogNorth verifies the fix until the alert clears.
+your app
+shop-prod
+■
+in production
+[
+lognorth
+]
+01
+alert
+/checkout 8% vs 1%
+[
+lognorth
+]
+02
+webhook
+POST to the routine
+grok bot
+03
+investigate
+logs, trace, commits
+grok bot
+04
+fix
+branch + failing test
+grok bot
+05
+pull request
+#412 with the evidence
+grok bot
+06
+ship
+CI, merge, deploy
+[
+lognorth
+]
+07
+verify
+0.9% since the deploy
+[
+lognorth
+]
+08
+closed
+alert clears, report sent
+01
+[lognorth]
+alert
+/checkout 8% vs 1%
+02
+[lognorth]
+webhook
+POST to the routine
+03
+grok bot
+investigate
+logs, trace, commits
+04
+grok bot
+fix
+branch + failing test
+05
+grok bot
+pull request
+#412 with the evidence
+06
+grok bot
+ship
+CI, merge, deploy
+07
+[lognorth]
+verify
+0.9% since the deploy
+08
+[lognorth]
+closed
+alert clears, report sent
+LogNorth watches and judges. Grok Bot does the work. Neither one needs you.
+Set it up in three steps →
+The webhook docs →
+[04] terminal
+Production, in your terminal.
+north tail
+follows the log.
+north top
+is htop for your app. Both run on your laptop and read your server with a read-only key. Open source, MIT.
+north top
+[
+lognorth
+]
+top ·
+rails-demo
+· logs.yoursite.com
+■ up 84ms
+· 15:04:22
+uptime 24h
+99.93%
+SPIKE
+/checkout
+18.2% errors in the last 5 min, normally 0.9% · since 15:01
+PATH
+REQS
+ERRORS
+ERR%
+AVG
+>
+/checkout
+SPIKE
+1,204
+219
+18.2%
+850ms
+/projects/:id/todos
+3,210
+4
+0.1%
+38ms
+/sessions
+827
+1
+0.1%
+179ms
+/dashboard
+612
+0
+—
+142ms
+/webhooks/stripe
+203
+0
+—
+52ms
+j/k move · enter errors · w window · q quit
+updated 2s ago
+install · macOS or Linux · no sudo
+$
+curl -fsSL lognorth.com/cli | sh
+# then it asks for your URL and agent key
+$
+north tail --errors
+$
+north top
+Everything tail and top do →
+Source on GitHub →
+[05] alerting
+Percentages lie.
+Most tools alert on a flat threshold like 5%. Same number, two very different nights.
+requests by hour · tue
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+hour
+requests
+errors
+rate
+verdict
+03:00
+20
+1
+5%
+noise
+12:00
+10,000
+500
+5%
+fire
+LogNorth compares each endpoint with its own past: the same hour on the last 7 days. It alerts when something is actually wrong.
+[06] the math
+Own it. The bill stops.
+Free for one app, $99 once for more, plus a $5 box you own. Cancel a subscription and your logs are gone. You can't cancel what you own.
+total cost · 5 years
+lognorth
+$399
+hosted
+$1,560
+you keep
+$1,161
+A small app at 12,000 requests a day. LogNorth: the $99 license, which the first app does not need, plus Hetzner's cheapest box at $5/mo. Hosted: a real entry plan at $26/mo with 90-day retention. That's the floor. Five years of request logs is about 7 GB.
+[07] pricing
+Free for one app. $99 once for all of them.
+receipt
+first app, every feature
+free
+unlimited apps
+$99
+docker images
+1
+database
+SQLite
+server
+any $5 VPS
+data leaves your box
+never
+updates
+your major version, forever
+support
+email me
+subscription
+none
+TOTAL · ONCE
+$99
+Buy unlimited apps · $99
+30-day money-back guarantee. No questions asked.
+install · 3 minutes
+# free for your first app. no license, no signup.
+curl -fsSL lognorth.com/install | sudo bash -s logs.example.com
+# docker, TLS, live backups, nightly updates. done.
+# amd64 or arm64: a $5 VPS, a Raspberry Pi,
+# or any box you already rent.
+# update now instead of waiting: run it again.
+[08] faq
+Questions.
+What is LogNorth?
+Self-hosted logging, error tracking, alerts, and uptime checks in one tool. One Go binary in one Docker container, with one SQLite file for storage. It runs on a
+$5
+VPS or a 64-bit Raspberry Pi (amd64 or arm64). SDKs for TypeScript/Node/Bun, Go, and Rails, plus OpenTelemetry logs and a plain HTTP API. A read-only MCP server lets Claude Code, Cursor, Codex, and Gemini CLI read production. Built and supported by one developer, Carlos Castellanos.
+Who is it for, and who is it not for?
+For solo developers and small teams who run web apps on their own server and don't want separate, metered tools for logs, errors, and uptime. Not for teams that need APM, distributed tracing, session replay, profiling, or compliance features. LogNorth doesn't accept Sentry SDKs: use its SDKs, OpenTelemetry logs, or the
+HTTP protocol
+.
+What are the limits?
+It is sized for one tenant: you. An event takes about
+0.3
+KB on average, so
+100,000
+events a day for a year is about
+11
+GB. A small app at
+12,000
+requests a day writes about
+7
+GB in five years. OpenTelemetry traces and metrics are accepted and dropped; LogNorth keeps logs.
+What does it cost over five years, next to Sentry or Better Stack?
+Prices checked October 2026. Sentry Team is
+$26
+/month (annual, 50K errors):
+$1,560
+over five years. Better Stack's first paid telemetry bundle is
+$30
+/month in Europe:
+$1,800
+. LogNorth on a
+$5
+/month server:
+$300
+for one app, or
+$399
+with the license for unlimited apps. Both have free tiers (Sentry for one user, Better Stack with 3 days of logs), and both do more, like replays and tracing. If you only need logs, errors, and uptime, you pay for the rest anyway.
+What is free, and what does $99 add?
+Your first app is free, with every feature: logs, errors, alerts, uptime checks, AI debugging, all SDKs. The
+$99
+license adds unlimited apps. You pay once. No subscription.
+30
+-day money-back guarantee.
+Can I try it before I buy?
+You don't need to. Install it and your first app is free, for as long as you run it. Add a license when you add a second app, for example staging. You can also click around the
+live demo
+. If it is not for you, you get your money back within
+30
+days.
+Does it monitor uptime?
+Yes. Paste your app URL when you create the app and LogNorth pings it every minute.
+3
+failures in a row = down, and you get an alert. When it answers again, you get another with how long it was down. LogNorth keeps
+30
+days of pings, so you can see when it failed and why: an HTTP
+503
+or a timeout.
+How uptime works
+.
+Can my AI agent read the logs?
+Yes. LogNorth has a read-only MCP server built in. Claude Code, Cursor, Codex, and other agents ask it what is alerting, which requests failed, and what the trace says, then find the line of code and the commit behind it. Every alert email ends with
+/lognorth:investigate
+, ready to paste. Your logs stay on your server: only the answer reaches your AI provider.
+How agents use LogNorth
+.
+Why not use Sentry?
+Sentry is a platform. LogNorth is a single Docker container. One file database. No dependencies. Runs on a
+$5
+VPS. That's the trade-off: fewer features, far less to run.
+What frameworks are supported?
+Go
+,
+Node/Bun
+, and
+Rails
+. Also accepts
+OpenTelemetry
+logs (OTLP/HTTP). LogNorth keeps the logs and discards traces and metrics. Any other language: follow the
+client protocol
+, or run
+/lognorth:integrate
+in your coding agent and it writes the client for you.
+How does alerting work?
+LogNorth groups errors into issues, compares each endpoint with its own history, and only alerts when something needs attention.
+1
+error in
+1,000
+requests? Normal. Sudden spike? That's a real problem. Push notifications via
+Telegram
+, a webhook,
+ntfy.sh
+, or email with your own
+SMTP
+.
+Does it tell me which deploy or outage an error belongs to?
+Only when the data says so. Each error carries the release it ran in and the user who hit it, so an issue shows the release it first appeared in, how many users it hit, and what the last user did in the 30 minutes before. When another error fails first in the same requests most of the time, the issue names it: fix that one first. Every deploy is a dashed line on the charts. When your app goes down, LogNorth lists the errors that jumped to at least
+5
+times their usual rate in those minutes. An error that happens all day is not a cause, so LogNorth leaves it out.
+How long are logs stored?
+You decide. Default is
+90
+days. Configure from
+7
+days to
+1
+year, or keep them forever. Shorter retention = smaller database.
+Do I get updates?
+Yes. Updates for your major version, forever. LogNorth updates itself each night, after a backup of its database. To update right now, run the install line again.
+[08] who
+~ $
+finger karloscodes
+Login:
+karloscodes
+Name:
+Carlos Castellanos
+Project:
+LogNorth
+Plan:
+Your logs hold your stack traces, file paths, and user IDs. They shouldn't sit on a vendor's server, billed by the gigabyte.
+LogNorth runs on a box you own. You pay once. If something breaks, you email me.
+karloscodes.com
+·
+@karloscodes
+~ $
+exit
+logout
+[
+lognorth
+]
+docs
+why
+agents
+uptime
+grok bot
+north cli
+stats
+vs sentry
+for go
+for node
+for rails
+contact
+~ $ :theme
+north
+catppuccin
+gruvbox
+nord
+dracula
+amber
+the app has the same
+Logging you own. No subscriptions. No investor pressure. Just software.
+NORMAL
+lognorth.com/
+j/k
+section
+c
+copy
+d
+demo
+b
+buy
+t
+theme
+Top
+
+===== agents.html =====
+AI debugging over MCP: Claude Code, Cursor, Codex · LogNorth
+[
+lognorth
+]
+why
+features
+agents
+docs
+pricing
+Install · free
+menu
+why
+features
+agents
+docs
+pricing
+~ $
+man 7 agents
+You debug it. Or
+AI does.
+LogNorth gives agents the same context you'd read yourself.
+Open the logs. Scroll. Search. Find the error. Context-switch to code. Trace it. Fix it. Deploy. Check if it worked.
+an example session
+$
+agent "payments are failing in checkout"
+[agent]
+Querying LogNorth for recent errors...
+[agent]
+Found:
+Stripe::CardError
+in payment_service.rb:67
+(23 hits, last 4m)
+[agent]
+Stack: checkout_controller.rb:23 → payment_service.rb:67 → charge!
+[agent]
+Reading codebase...
+[agent]
+Root cause: live mode request with test card token
+[agent]
+Writing fix...
+[agent]
+Tests pass. Deploying.
+[agent]
+Verified: 0 errors in last 5 minutes.
+Done.
+[01] why it works solo
+Why this works if you're solo.
+The bug is in 1 of 200 files. The stack trace is 14 frames deep. You need to cross-reference 3 log entries across 2 services. That is all context-loading, before you write a single fix.
+Your codebase fits in a context window. The agent reads your errors, traces the call stack, greps your code, and writes the patch.
+[02] what the agent reads
+The same data you'd read, as a tool result.
+No dashboard required. The issue, where it lives in your code, and which endpoints it hits.
+tool · list_issues
+{
+"issues"
+: [{
+"error"
+:
+"Your card was declined."
+,
+"error_class"
+:
+"Stripe::CardError"
+,
+"error_file"
+:
+"app/services/payment_service.rb"
+,
+"error_line"
+:
+67
+,
+"count"
+:
+23
+,
+"count_24h"
+:
+23
+,
+"first_seen"
+:
+"2026-03-29 14:28:00"
+,
+"last_seen"
+:
+"2026-03-29 14:32:01"
+,
+"paths"
+:       [
+"/checkout"
+],
+"trend"
+:
+"up"
+,
+"active"
+:
+true
+}]
+}
+The logs around it too, every line that led to it, in order.
+logs · req-8f3a2b
+14:32:01.003
+POST /checkout
+12ms
+14:32:01.015
+Stripe::PaymentIntent.create
+847ms
+14:32:01.863
+Stripe::CardError
+payment_service.rb:67
+pattern:
+23 occurrences in 4 minutes
+, all from /checkout
+trend:
+↑ up
+Steps, timing, patterns, repetitions. The agent sees the spike, reads the logs, and finds the root cause.
+[03] connect
+One command. Every agent connected.
+Create an agent key in
+Settings > Developer
+. The same page shows this command with your URL and key in it. Run it in your terminal:
+terminal
+$
+curl -fsSL https://lognorth.com/cli | sh -s -- https://logs.yoursite.com lgn-agent-...
+✓
+Connected to logs.yoursite.com: shop-prod, shop-staging
+Saved to ~/.config/lognorth/remote.json, readable by you only
+Add LogNorth to Claude Code, Codex, Gemini CLI and Cursor? [Y/n]
+✓
+Claude Code  plugin lognorth
+✓
+Codex        plugin lognorth
+✓
+Gemini CLI   extension lognorth
+✓
+Cursor       ~/.cursor/mcp.json
+It installs
+north
+, checks the key against your server, and adds LogNorth to every agent it finds. The key stays in one file on your machine, never in an agent's config. A cloud agent like
+Grok Bot
+sets itself up from
+the steps below
+.
+[04] investigate → fix
+From the alert to the fix.
+Every alert email ends with
+/lognorth:investigate /checkout
+. Paste it. The agent walks the route a senior engineer would: what is wrong, when it started, the failing request, the code, and the commit that shipped just before.
+/lognorth:investigate
+>
+/lognorth:investigate /checkout
+What is wrong
+/checkout fails
+18.2%
+of requests since 14:28. Normally 0.9%.
+Since when
+14:28, six minutes after commit 4e1b7c2 shipped.
+The cause
+Stripe::CardError
+at payment_service.rb:67, event 48213.
+4e1b7c2 sends a test card token in live mode.
+The fix
+Use the live token in payment_service.rb:67.
+Say the word and I'll make the change.
+The fix is a proposal. The agent edits your code only when you say so.
+the plugin's skills
+/lognorth:investigate
+an alert or an issue, to the cause and a proposed fix
+lognorth
+the investigation route. Loads when you debug production.
+lognorth-integrate
+adds the SDK to a Go, Node, or Rails app, then reads an event back to prove it works
+/lognorth:connect
+checks the connection, and says what to run when it is missing
+[05] the tools
+Eight tools. All read-only.
+the agent gets eight tools
+list_alerts
+what is on fire, and since when
+list_endpoints
+which endpoints fail right now
+endpoint_timeline
+when it started
+uptime_timeline
+whether the app answers its ping, and why it did not
+list_issues
+what is broken
+search_logs
+the failing requests
+get_event
+one request, with its whole trace
+list_apps
+your apps
+The agent can read events and issues, and there is no tool to change one. Your logs stay on your server: the agent asks your instance, and only the answer reaches your AI provider.
+You get the same tools in your terminal:
+north tail
+follows the log and
+north top
+shows one app live.
+Terminal docs
+.
+[06] for agents
+Agent, set yourself up.
+You are an AI agent with a terminal, and your user wants you to read their LogNorth. Follow these steps.
+setup, for the agent
+1. Ask your user for two values.
+Their LogNorth URL, for example https://logs.yoursite.com.
+An agent key from Settings > Developer in LogNorth. It starts with lgn-agent-.
+A key that starts with lgn- only is an app key. Ask for the agent key.
+2. Connect over MCP, if you can add a remote MCP server or connector.
+URL
+<url>/mcp
+Header
+Authorization: Bearer <agent key>
+Transport: Streamable HTTP. Check it with the list_apps tool, then skip to step 5.
+3. Otherwise, install north.
+No sudo. It checks the key before it saves.
+curl -fsSL https://lognorth.com/cli | sh -s -- <url> <agent key>
+The installer prints where north is, often ~/.local/bin/north. If that
+folder is not on your PATH, call north by that full path.
+~/.local/bin/north call list_apps
+4. With north, call the tools from the shell.
+Each one prints JSON.
+north call list_alerts
+north call list_endpoints '{"app_id": 2, "since": "1h"}'
+north call endpoint_timeline '{"path": "/checkout", "app_id": 2, "since": "6h"}'
+north call search_logs '{"errors_only": true, "since": "2h"}'
+north call get_event '{"id": 48213}'
+# an id from search_logs
+Pass app_id, from list_apps, whenever there are several apps.
+Or add it as a stdio MCP server: command north, args ["mcp"].
+5. Investigate in this order.
+list_alerts, then endpoint_timeline
+for when it started, search_logs for what failed, get_event for one
+full trace and error_file:error_line, then the commits just before.
+6. If your user wants you to receive alerts,
+create a webhook your
+user can POST to, and give them its URL and key. They paste both in
+LogNorth under Settings > Alerts > Webhook. Each alert arrives as JSON:
+title, message, text, sent_at. The message ends with
+/lognorth:investigate <path or issue>: start there.
+Rules.
+Never print the key. Every tool is read-only: you cannot mute,
+delete, or change anything in LogNorth. Say when a cause is a guess.
+If north says the key was rejected, ask your user for a new agent key.
+In a cloud agent, the LogNorth server must be reachable from the internet. Give the agent its own key, so you can revoke it without touching yours.
+Every tool and argument
+.
+Read the error. Trace the cause. Write the fix. Verify the deploy.
+Four steps. Zero tabs.
+Read the MCP docs →
+Open demo →
+~ $
+exit
+logout
+[
+lognorth
+]
+docs
+why
+agents
+uptime
+grok bot
+north cli
+stats
+vs sentry
+for go
+for node
+for rails
+contact
+~ $ :theme
+north
+catppuccin
+gruvbox
+nord
+dracula
+amber
+the app has the same
+Logging you own. No subscriptions. No investor pressure. Just software.
+
+===== uptime.html =====
+Self-hosted uptime monitoring · LogNorth
+[
+lognorth
+]
+why
+features
+agents
+docs
+pricing
+Install · free
+menu
+why
+features
+agents
+docs
+pricing
+~ $
+man 7 uptime
+Uptime monitoring, in the same box.
+LogNorth pings your app every minute. When it stops answering, you get an alert. When it's back, you get another. No second tool to run, no second bill.
+uptime · shop.example.com
+99.93%
+· 24h
+15:15–15:30
+15 pings ·
+2 failed
+· avg 91ms
+HTTP 503
+×2
+24h ago
+12h
+now
+up 84ms
+· last ping 12s ago
+last failure
+15:21
+·
+503 · 1,204ms
+[01] the ping
+A ping every minute.
+Give an app its URL when you create it, or later on the Apps page. LogNorth sends a GET every minute, waits up to 5 seconds, and follows one redirect.
+what an answer counts as
+the answer
+counts as
+2xx, 3xx, 4xx
+up: your app answered
+5xx
+failed
+no answer within 5s
+failed
+refused, DNS, or TLS error
+failed
+A 404 or a 401 still means your app is running, so only a 5xx or no answer counts as a failure.
+[02] the alert
+Three misses, one alert.
+3 failed pings in a row mark the app down, and one alert goes out.
+When it answers again, a second alert says it's back and how long it was down.
+Alerts go where your other alerts go: Telegram, a webhook, ntfy.sh, or email.
+An outage that starts in quiet hours alerts when they end.
+No alerts in the first 10 minutes after LogNorth starts, so a restart doesn't page you.
+[03] the history
+30 days of pings. Every one.
+LogNorth keeps each ping with its time, HTTP status, and response time. The Endpoints page draws the last 24 hours in 96 bars. Hover a red one to see what failed: HTTP 503 ×2, or no answer within 5s.
+Home and the Apps page show each app's ping and its 24-hour uptime. The status bar shows the app you're in: up 84ms, or down 12m in red.
+[04] why here
+Down, and why, on one screen.
+An uptime tool tells you the site is down. LogNorth also has the logs of the requests that failed, so the next click shows why.
+The pings come from your LogNorth server with the user agent
+LogNorth Uptime/1.0 (+https://lognorth.com)
+, so you can let them through a firewall.
+One thing it can't do: if the box LogNorth runs on goes down, nothing pings. Run LogNorth on a different box than the app it watches.
+Logs, errors, alerts, and uptime. One box. Free for one app.
+Install LogNorth · free
+Read the uptime docs →
+~ $
+exit
+logout
+[
+lognorth
+]
+docs
+why
+agents
+uptime
+grok bot
+north cli
+stats
+vs sentry
+for go
+for node
+for rails
+contact
+~ $ :theme
+north
+catppuccin
+gruvbox
+nord
+dracula
+amber
+the app has the same
+Logging you own. No subscriptions. No investor pressure. Just software.
+
+===== why.html =====
+Why LogNorth · Self-hosted logging without the gigabyte meter
+[
+lognorth
+]
+why
+features
+agents
+docs
+pricing
+Install · free
+menu
+why
+features
+agents
+docs
+pricing
+~ $
+man 7 why
+You're paying for a problem you don't have.
+Hosted logging is built for thousands of tenants at once. You have one app.
+[01] volume
+The volume problem.
+Every request your app handles spits out a dozen log lines. Across a busy service that's millions of requests a day. A hosted platform takes that from thousands of customers at once. Billions of lines, pouring in, forever. Storing it, indexing it, keeping it searchable: that's genuinely hard.
+So they build for it. Distributed ingestion. Sharded storage. Per-tenant isolation. Search clusters. The machinery is real, and it's expensive to run.
+[02] the meter
+So they meter you by the gigabyte.
+Their cost is the volume, so that's how they price it. You pay to ingest every gigabyte, then you pay again, every month, to keep it. Send more logs, pay more. Keep them longer, pay more. Grow your app, pay more.
+It's a pricing model that punishes you for the two things you actually want: logging more, and keeping it longer. The better your app does, the bigger the bill, for the privilege of watching it work.
+[03] your scale
+You don't have that scale.
+That multi-tenant scale, thousands of customers and billions of lines, is the part you don't have. You have one app. Your logs, and only yours.
+Take the other tenants out of the equation and the hard problem disappears. Billions of lines becomes millions. A storage cluster becomes a single file. Small enough to run on a box that costs less than lunch.
+[04] the stack
+One container. SQLite. A $5 box.
+LogNorth is one Docker container with a single SQLite file behind it. No cluster, no Redis, no Elasticsearch, no Kafka, no DevOps person. It runs on a $5 VPS and keeps every log line searchable, because at your scale that's all it takes.
+Boring technology. The kind that still works in 10 years, that you can understand in an afternoon, that lets you sleep at night.
+[05] your data
+Your data. Your server.
+Every hosted logging tool reads your stack traces, your file paths, your user IDs. Self-hosted means your logs stay on your server. No vendor access, no anonymous telemetry, no third-party subprocessor in your privacy policy.
+When a customer asks "who can see our logs?" the answer is "only us."
+[06] the price
+Free for one app. Not the treadmill.
+Your first app is free. Unlimited apps are $99, once. Not $29/month climbing to $99/month climbing to "contact sales." Not per-seat, not per-event, not per-gigabyte.
+Run the numbers on a small app. A real entry hosted plan is about $26 a month with 90-day retention, so $1,560 over five years. LogNorth with the license is $99 plus a $5 server, so $399, and $300 for a single app. You keep $1,161, and you keep your data, all of it, not just the last 90 days. In ten years the hosted bill is still running. The license is still $99.
+[07] your agent
+And your AI reads it for you.
+Claude Code, Cursor, and Codex can query your production logs through a read-only API. Point your agent at a failing endpoint and let it dig.
+ask
+>
+Why are payments failing?
+>
+What changed on sign_up in the last hour?
+>
+Show me every checkout error today.
+It reads the logs, finds the broken request, and tells you the fix, without you opening a dashboard.
+See how agents use LogNorth →
+Their problem, priced by the gigabyte. Yours, free for one app.
+Install LogNorth · free
+Unlimited apps · $99 →
+~ $
+exit
+logout
+[
+lognorth
+]
+docs
+why
+agents
+uptime
+grok bot
+north cli
+stats
+vs sentry
+for go
+for node
+for rails
+contact
+~ $ :theme
+north
+catppuccin
+gruvbox
+nord
+dracula
+amber
+the app has the same
+Logging you own. No subscriptions. No investor pressure. Just software.

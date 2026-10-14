@@ -1,0 +1,427 @@
+ 
+ 
+ 
+ Hoodiechamp · Creators bid. You pick. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {
+ "imports": {
+ "application": "/assets/application-2f71c6db.js",
+ "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+ "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+ "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+ "controllers/application": "/assets/controllers/application-3affb389.js",
+ "controllers/card_controller": "/assets/controllers/card_controller-6445f325.js",
+ "controllers/draft_poll_controller": "/assets/controllers/draft_poll_controller-aa5cd52d.js",
+ "controllers/hello_controller": "/assets/controllers/hello_controller-708796bd.js",
+ "controllers": "/assets/controllers/index-ee64e1f1.js",
+ "controllers/menu_controller": "/assets/controllers/menu_controller-2619344d.js",
+ "controllers/otp_controller": "/assets/controllers/otp_controller-6a3499af.js",
+ "controllers/player_controller": "/assets/controllers/player_controller-cf15ab9c.js",
+ "controllers/poster_controller": "/assets/controllers/poster_controller-b8b6c7fa.js",
+ "controllers/preview_controller": "/assets/controllers/preview_controller-199955f3.js",
+ "controllers/rail_controller": "/assets/controllers/rail_controller-31736afd.js",
+ "controllers/typewriter_controller": "/assets/controllers/typewriter_controller-a219bcc2.js"
+ }
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ 
+ 
+ For businesses 
+ Price 
+ For creators 
+ Sign in 
+ Ask for an invite 
+ 
+ 
+ 
+ 
+ 
+ 
+ For small businesses with a product to sell 
+ Creators bid. You pick . 
+ 
+ You make the product. A creator makes the video. Say what you need in one sentence, and creators send you a price. 
+ 
+ No agency. No subscription. No marketing team. 
+ 
+ 
+ Ask for an invite 
+ 
+ 
+ 
+ Your business 
+ 
+ 
+ 
+ 
+ Website 
+ 
+ 
+ 
+ 
+ Email 
+ 
+ 
+ 
+ 
+ 
+ 
+ We read every request. Invited businesses pick free for a year. 
+ 
+ Have an account? Sign in 
+ 
+ 
+ 
+ Free to post. $29 when you pick.
+ 
+ 
+ Invite only. Picks are free for a year → 
+ How the price works 
+ 
+ 
+ 
+ 
+ 
+ We are in beta 
+ Hoodiechamp is new, so expect a hiccup here and there. Businesses join by invite, and an invited business picks free for a year. Ask for an invite. We email you when you are in. 
+ 
+ 
+ 
+ 
+ How it works 
+ 
+ 
+ 1 
+ 
+ Say what you need 
+ One sentence. No form. We fill in the details, and you check them. 
+ 
+ 
+ 
+ 2 
+ 
+ Get prices, not pitches 
+ Only creators who fit can answer, with a price. Nobody can write to you until you ask. 
+ 
+ 
+ 
+ 3 
+ 
+ Pick one. Pay them yourself. 
+ Pick one creator, or a few. Each pick has the same flat fee. You talk to them by email and pay them yourself. We never touch the money. 
+ 
+ 
+ 
+ 
+ 
+ Example 
+ 
+ 3 TikTok ads for a vitamin C serum 
+ 3 proposals 
+ 
+ <div class="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-3 sm:mx-0 sm:grid sm:grid-cols-3 sm:items-start sm:overflow-visible sm:px-0 sm:pb-0"
+ data-controller="preview" data-preview-autoplay-value="true">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ MM 
+ Mia Makes 
+ 
+ 
+ $180 
+ per video 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ AR 
+ Ava Reach 
+ 
+ 
+ $240 
+ per video 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ RG 
+ Rosa Glow 
+ 
+ 
+ $150 
+ per video 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Price 
+ Free to post. $29 when you pick. 
+ 
+ 
+ 
+ Asking is free. So are the prices you get back. 
+ Each pick costs $29, for a job of any size. 
+ Cancel a pick before the work is delivered, and your next pick is free. 
+ Hiring the same creator again is free. 
+ Creators keep 100% of their price. No subscription. 
+ 
+ 
+ Pick often? A flat monthly price is coming. The price you start on never goes up.
+ 
+ We are invite only for now. An invited business pays nothing for its first year. 
+ Invite only. Picks are free for a year → 
+ 
+ 
+ 
+ 
+ 
+ Made for one person, or five 
+ You sell something real: a serum, a coffee, a candle, a pet toy, an app. You need videos, and you do not have a week to find someone on Instagram. Write one sentence. Read the prices. Pick one. 
+ 
+ 
+ 
+ Why pick here, and not in a direct message 
+ 
+ 
+ A record of the whole job 
+ The pick puts the price, the date, and the use of the videos in an email to both of you. Every step after it is kept with its time: the delivery, your confirmation, the review. Print it if you ever need proof. 
+ 
+ 
+ See a preview before you pay 
+ The creator delivers a preview first. You pay them, they send the final files, and you confirm the job. 
+ 
+ 
+ A way out 
+ Plans change. You or the creator can cancel a pick, with a reason, until the work is delivered. Your next pick is free. 
+ 
+ 
+ Hire again for free 
+ Your next job with a creator who already finished one for you here costs nothing. One click starts it. 
+ 
+ 
+ Your hoodiechamps, in one list 
+ Every creator you finished a job with, what you agreed, and how you rated them. Show them on your public page if you want. 
+ 
+ 
+ Bring a creator you know 
+ Already agreed with someone who has a profile here? Send a request that only they see, and pick them. You get the record, and they get the review. 
+ 
+ 
+ 
+ 
+ 
+ 
+ Watch first. Pick second. 
+ Every creator shows real videos, a follower count, and reviews from finished jobs. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Fitness &amp; wellness 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Food &amp; drink 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Fashion &amp; accessories 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Beauty &amp; skincare 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Home &amp; lifestyle 
+ Example clip 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Real people, checked by a person. 
+ A person checks every creator before they can send you a price. 
+ 
+ 
+ A review needs a finished job. 
+ Only a business that picked a creator and got the work can write one. 
+ 
+ 
+ Your money never passes through us. 
+ You agree on the details and pay the creator yourself. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ Small businesses say what they need. Creators send a price. You pick one. 
+ 
+ 
+ For businesses 
+ 
+ Ask for an invite 
+ How it works 
+ Brief templates 
+ Apps &amp; software Beauty &amp; skincare Fashion &amp; accessories Finance &amp; business Fitness &amp; wellness Food &amp; drink Gaming Home &amp; lifestyle Parents &amp; kids Pets Tech &amp; gadgets Travel 
+ 
+ 
+ 
+ For creators 
+ 
+ Create your profile 
+ Open briefs 
+ How it works 
+ 
+ 
+ 
+ Account 
+ 
+ Business sign in 
+ Creator sign in 
+ Ask for an invite 
+ Join as a creator 
+ 
+ 
+ 
+ 
+ © 2026 Hoodiechamp · Terms 
+ 
+ Your money never passes through us. You pay the creator yourself. 
+ Español 
+ 
+ 
+ 
+ 
+ 
+ 

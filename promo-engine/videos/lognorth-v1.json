@@ -1,0 +1,295 @@
+{
+  "id": "lognorth-v1",
+  "brand": {
+    "name": "LogNorth",
+    "url": "lognorth.com",
+    "cta": "Install free",
+    "logo": "lognorth/logo.svg",
+    "theme": "dark",
+    "wordmark": {
+      "text": "lognorth",
+      "brackets": true,
+      "mono": true
+    },
+    "colors": {
+      "bg": "#0c0a09",
+      "ink": "#fafaf9",
+      "muted": "#d6d3d1",
+      "accent": "#a3e635",
+      "accentDark": "#84cc16",
+      "card": "#1c1917",
+      "onAccent": "#1c1917",
+      "error": "#e11d48",
+      "line": "#292524",
+      "border": "#44403c",
+      "dim": "#a8a29e"
+    },
+    "mascot": null
+  },
+  "voice": {
+    "engine": "kokoro",
+    "voice": "af_heart",
+    "speed": 1.0,
+    "gap": 0.18,
+    "lexicon": {
+      "LogNorth": "lˈɔɡnˌɔɹθ",
+      "MCP": "ˌɛmsˌipˈi"
+    },
+    "captionMap": [
+      [
+        "five dollar",
+        "$5"
+      ],
+      [
+        "LogNorth dot com",
+        "lognorth.com"
+      ]
+    ],
+    "perSentence": true,
+    "mergeShorterThan": 20,
+    "sentenceGap": 0.28,
+    "bridgePause": 0.35,
+    "tail": 0.75,
+    "endMin": 2.4
+  },
+  "scenes": [
+    {
+      "type": "kinetic-text",
+      "dark": true,
+      "instant": true,
+      "vo": "Say it's three in the morning, and checkout starts failing.",
+      "lines": [
+        "Say it's 3am,",
+        "and checkout",
+        "starts failing."
+      ],
+      "accentWords": [
+        "failing."
+      ]
+    },
+    {
+      "type": "diagram",
+      "diagram": "error-event",
+      "vo": "Same error, again and again. LogNorth makes it one issue, and sends you an alert.",
+      "app": "shop-prod",
+      "error": {
+        "cls": "Stripe::CardError",
+        "msg": "Your card was declined.",
+        "file": "payment_service.rb:67",
+        "path": "/checkout"
+      },
+      "count": 23,
+      "lines": [
+        [
+          "05:00:56.997",
+          "POST",
+          "/checkout",
+          "201"
+        ],
+        [
+          "05:00:57.941",
+          "GET",
+          "/projects/42/todos",
+          "200"
+        ],
+        [
+          "05:00:58.012",
+          "POST",
+          "/checkout",
+          "500"
+        ],
+        [
+          "05:00:58.230",
+          "POST",
+          "/checkout",
+          "500"
+        ],
+        [
+          "05:00:58.402",
+          "GET",
+          "/projects/42/todos",
+          "200"
+        ],
+        [
+          "05:00:58.611",
+          "POST",
+          "/checkout",
+          "500"
+        ],
+        [
+          "05:00:58.904",
+          "POST",
+          "/checkout",
+          "500"
+        ]
+      ],
+      "issueNote": "1 issue, not 1,000 duplicates",
+      "alert": {
+        "title": "spike: /checkout at 18.2%",
+        "to": "telegram"
+      },
+      "bridge": true
+    },
+    {
+      "type": "kinetic-text",
+      "vo": "Normally, you'd open the logs, scroll, and search. Half asleep.",
+      "lines": [
+        "Open the logs.",
+        "Scroll. Search.",
+        "Half asleep."
+      ],
+      "accentWords": [
+        "Half",
+        "asleep."
+      ]
+    },
+    {
+      "type": "diagram",
+      "diagram": "agent-mcp",
+      "bridge": true,
+      "vo": "So ask your agent instead. Claude Code or Cursor reads production over MCP. It gets the error, and every log line that led to it.",
+      "agents": "your agent · Claude Code / Cursor",
+      "prompt": "why are payments failing?",
+      "tool": "search_logs",
+      "host": "logs.yoursite.com",
+      "mcpLabel": "read-only",
+      "found": {
+        "cls": "Stripe::CardError",
+        "where": "payment_service.rb:67 · 23 hits, last 4m"
+      },
+      "logs": [
+        [
+          "14:32:01.003",
+          "POST /checkout",
+          "12ms",
+          false
+        ],
+        [
+          "14:32:01.015",
+          "PaymentIntent.create",
+          "847ms",
+          false
+        ],
+        [
+          "14:32:01.863",
+          "Stripe::CardError",
+          "",
+          true
+        ]
+      ],
+      "stream": [
+        {
+          "t": "14:31:58.120 GET  /projects/42/todos  200"
+        },
+        {
+          "t": "14:32:01.003 POST /checkout  12ms",
+          "k": 1
+        },
+        {
+          "t": "14:32:01.015 Stripe::PaymentIntent.create",
+          "k": 1
+        },
+        {
+          "t": "14:32:01.863 Stripe::CardError :67  500",
+          "k": 0
+        },
+        {
+          "t": "14:32:02.310 GET  /sessions  200"
+        },
+        {
+          "t": "14:32:03.044 GET  /dashboard  200"
+        }
+      ],
+      "cues": {
+        "ask": "ask",
+        "query": "reads",
+        "mcp": "mcp",
+        "found": "error",
+        "logs": "every"
+      }
+    },
+    {
+      "type": "diagram",
+      "diagram": "fix",
+      "bridge": true,
+      "vo": "It finds the cause, and proposes a fix. Say the word, ship it, and the errors stop.",
+      "file": "app/services/payment_service.rb",
+      "cause": "# cause: test card token in live mode",
+      "minus": "token = test_card_token",
+      "plus": "token = live_card_token",
+      "proposed": "proposed fix",
+      "applied": "applied",
+      "chartLabel": "/checkout errors",
+      "verified": "0 errors in last 5 minutes",
+      "uptime": "up 84ms"
+    },
+    {
+      "type": "product-cut",
+      "frame": "window",
+      "image": "lognorth/logs-errors.png",
+      "url": "demo.lognorth.com",
+      "vo": "Or read it yourself. Plain lines, errors in red.",
+      "focus": 0
+    },
+    {
+      "type": "diagram",
+      "diagram": "one-box",
+      "bridge": true,
+      "vo": "It all runs on one box you own. Logs, errors, alerts and uptime, on a five dollar server. Your logs stay there.",
+      "modules": [
+        {
+          "label": "logs",
+          "sub": "every line, plain",
+          "cue": "logs"
+        },
+        {
+          "label": "errors",
+          "sub": "grouped into issues",
+          "cue": "errors"
+        },
+        {
+          "label": "alerts",
+          "sub": "vs. its own history",
+          "cue": "alerts"
+        },
+        {
+          "label": "uptime",
+          "sub": "a ping every minute",
+          "cue": "uptime"
+        }
+      ],
+      "price": "$5 box",
+      "stack": "1 Docker container · 1 SQLite file",
+      "stay": "your logs stay on your server",
+      "cues": {
+        "box": "box",
+        "price": "five",
+        "stay": "stay"
+      }
+    },
+    {
+      "type": "kinetic-text",
+      "bridge": true,
+      "vo": "The price? Your first app is free. Unlimited apps are ninety-nine dollars, once.",
+      "lines": [
+        "First app: free.",
+        "Unlimited apps:",
+        "$99",
+        "once."
+      ],
+      "accentWords": [
+        "free.",
+        "$99",
+        "once."
+      ],
+      "big": "$99"
+    },
+    {
+      "type": "end-card",
+      "vo": "Install it free at LogNorth dot com.",
+      "pose": "none",
+      "tagline": "Logs, errors and uptime on a $5 box.",
+      "captions": false
+    }
+  ]
+}

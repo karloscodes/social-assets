@@ -1,0 +1,596 @@
+{
+ "total": 33.128,
+ "fps": 30,
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 4.801,
+   "voStart": 0.15,
+   "voEnd": 4.701
+  },
+  {
+   "start": 4.801,
+   "end": 9.012,
+   "voStart": 5.271,
+   "voEnd": 8.912
+  },
+  {
+   "start": 9.012,
+   "end": 15.006,
+   "voStart": 9.332,
+   "voEnd": 14.906
+  },
+  {
+   "start": 15.006,
+   "end": 19.491,
+   "voStart": 15.326,
+   "voEnd": 19.391
+  },
+  {
+   "start": 19.491,
+   "end": 25.155,
+   "voStart": 19.811,
+   "voEnd": 25.055
+  },
+  {
+   "start": 25.155,
+   "end": 28.786,
+   "voStart": 25.625,
+   "voEnd": 28.686
+  },
+  {
+   "start": 28.786,
+   "end": 33.128,
+   "voStart": 28.906,
+   "voEnd": 32.278
+  }
+ ],
+ "words": [
+  {
+   "text": "Alert",
+   "start": 0.182,
+   "end": 0.507,
+   "scene": 0
+  },
+  {
+   "text": "at",
+   "start": 0.507,
+   "end": 0.67,
+   "scene": 0
+  },
+  {
+   "text": "three",
+   "start": 0.67,
+   "end": 0.945,
+   "scene": 0
+  },
+  {
+   "text": "in",
+   "start": 0.945,
+   "end": 1.02,
+   "scene": 0
+  },
+  {
+   "text": "the",
+   "start": 1.02,
+   "end": 1.095,
+   "scene": 0
+  },
+  {
+   "text": "morning.",
+   "start": 1.095,
+   "end": 1.757,
+   "scene": 0
+  },
+  {
+   "text": "SuppyHQ",
+   "start": 1.954,
+   "end": 2.704,
+   "scene": 0
+  },
+  {
+   "text": "can't",
+   "start": 2.704,
+   "end": 2.954,
+   "scene": 0
+  },
+  {
+   "text": "send",
+   "start": 2.954,
+   "end": 3.142,
+   "scene": 0
+  },
+  {
+   "text": "replies.",
+   "start": 3.142,
+   "end": 3.879,
+   "scene": 0
+  },
+  {
+   "text": "You're",
+   "start": 3.979,
+   "end": 4.117,
+   "scene": 0
+  },
+  {
+   "text": "asleep.",
+   "start": 4.117,
+   "end": 4.829,
+   "scene": 0
+  },
+  {
+   "text": "So",
+   "start": 5.315,
+   "end": 5.44,
+   "scene": 1
+  },
+  {
+   "text": "LogNorth",
+   "start": 5.44,
+   "end": 5.965,
+   "scene": 1
+  },
+  {
+   "text": "wakes",
+   "start": 5.965,
+   "end": 6.202,
+   "scene": 1
+  },
+  {
+   "text": "a",
+   "start": 6.202,
+   "end": 6.265,
+   "scene": 1
+  },
+  {
+   "text": "Grok",
+   "start": 6.265,
+   "end": 6.59,
+   "scene": 1
+  },
+  {
+   "text": "Bot",
+   "start": 6.59,
+   "end": 6.815,
+   "scene": 1
+  },
+  {
+   "text": "routine",
+   "start": 6.815,
+   "end": 7.24,
+   "scene": 1
+  },
+  {
+   "text": "instead,",
+   "start": 7.24,
+   "end": 7.915,
+   "scene": 1
+  },
+  {
+   "text": "through",
+   "start": 8.027,
+   "end": 8.24,
+   "scene": 1
+  },
+  {
+   "text": "a",
+   "start": 8.24,
+   "end": 8.34,
+   "scene": 1
+  },
+  {
+   "text": "webhook.",
+   "start": 8.34,
+   "end": 9.04,
+   "scene": 1
+  },
+  {
+   "text": "The",
+   "start": 9.332,
+   "end": 9.403,
+   "scene": 2
+  },
+  {
+   "text": "bot",
+   "start": 9.403,
+   "end": 9.678,
+   "scene": 2
+  },
+  {
+   "text": "reads",
+   "start": 9.678,
+   "end": 9.966,
+   "scene": 2
+  },
+  {
+   "text": "the",
+   "start": 9.966,
+   "end": 10.053,
+   "scene": 2
+  },
+  {
+   "text": "failing",
+   "start": 10.053,
+   "end": 10.478,
+   "scene": 2
+  },
+  {
+   "text": "requests",
+   "start": 10.478,
+   "end": 10.878,
+   "scene": 2
+  },
+  {
+   "text": "over",
+   "start": 10.878,
+   "end": 11.128,
+   "scene": 2
+  },
+  {
+   "text": "MCP.",
+   "start": 11.128,
+   "end": 12.078,
+   "scene": 2
+  },
+  {
+   "text": "The",
+   "start": 12.168,
+   "end": 12.268,
+   "scene": 2
+  },
+  {
+   "text": "logs,",
+   "start": 12.268,
+   "end": 12.743,
+   "scene": 2
+  },
+  {
+   "text": "the",
+   "start": 12.818,
+   "end": 12.918,
+   "scene": 2
+  },
+  {
+   "text": "trace,",
+   "start": 12.918,
+   "end": 13.468,
+   "scene": 2
+  },
+  {
+   "text": "and",
+   "start": 13.543,
+   "end": 13.655,
+   "scene": 2
+  },
+  {
+   "text": "the",
+   "start": 13.655,
+   "end": 13.743,
+   "scene": 2
+  },
+  {
+   "text": "commit",
+   "start": 13.743,
+   "end": 14.093,
+   "scene": 2
+  },
+  {
+   "text": "just",
+   "start": 14.093,
+   "end": 14.305,
+   "scene": 2
+  },
+  {
+   "text": "before.",
+   "start": 14.305,
+   "end": 15.043,
+   "scene": 2
+  },
+  {
+   "text": "It",
+   "start": 15.326,
+   "end": 15.442,
+   "scene": 3
+  },
+  {
+   "text": "writes",
+   "start": 15.442,
+   "end": 15.742,
+   "scene": 3
+  },
+  {
+   "text": "the",
+   "start": 15.742,
+   "end": 15.879,
+   "scene": 3
+  },
+  {
+   "text": "fix",
+   "start": 15.879,
+   "end": 16.154,
+   "scene": 3
+  },
+  {
+   "text": "with",
+   "start": 16.154,
+   "end": 16.279,
+   "scene": 3
+  },
+  {
+   "text": "a",
+   "start": 16.279,
+   "end": 16.379,
+   "scene": 3
+  },
+  {
+   "text": "test,",
+   "start": 16.379,
+   "end": 17.067,
+   "scene": 3
+  },
+  {
+   "text": "and",
+   "start": 17.167,
+   "end": 17.304,
+   "scene": 3
+  },
+  {
+   "text": "opens",
+   "start": 17.304,
+   "end": 17.654,
+   "scene": 3
+  },
+  {
+   "text": "a",
+   "start": 17.654,
+   "end": 17.754,
+   "scene": 3
+  },
+  {
+   "text": "pull",
+   "start": 17.754,
+   "end": 18.017,
+   "scene": 3
+  },
+  {
+   "text": "request",
+   "start": 18.017,
+   "end": 18.504,
+   "scene": 3
+  },
+  {
+   "text": "with",
+   "start": 18.504,
+   "end": 18.604,
+   "scene": 3
+  },
+  {
+   "text": "the",
+   "start": 18.604,
+   "end": 18.717,
+   "scene": 3
+  },
+  {
+   "text": "evidence.",
+   "start": 18.717,
+   "end": 19.517,
+   "scene": 3
+  },
+  {
+   "text": "If",
+   "start": 19.811,
+   "end": 19.936,
+   "scene": 4
+  },
+  {
+   "text": "you've",
+   "start": 19.936,
+   "end": 20.073,
+   "scene": 4
+  },
+  {
+   "text": "given",
+   "start": 20.073,
+   "end": 20.298,
+   "scene": 4
+  },
+  {
+   "text": "it",
+   "start": 20.298,
+   "end": 20.423,
+   "scene": 4
+  },
+  {
+   "text": "merge",
+   "start": 20.423,
+   "end": 20.736,
+   "scene": 4
+  },
+  {
+   "text": "and",
+   "start": 20.736,
+   "end": 20.836,
+   "scene": 4
+  },
+  {
+   "text": "deploy,",
+   "start": 20.836,
+   "end": 21.373,
+   "scene": 4
+  },
+  {
+   "text": "it",
+   "start": 21.473,
+   "end": 21.636,
+   "scene": 4
+  },
+  {
+   "text": "ships.",
+   "start": 21.636,
+   "end": 22.248,
+   "scene": 4
+  },
+  {
+   "text": "Then",
+   "start": 22.419,
+   "end": 22.556,
+   "scene": 4
+  },
+  {
+   "text": "it",
+   "start": 22.556,
+   "end": 22.644,
+   "scene": 4
+  },
+  {
+   "text": "watches",
+   "start": 22.644,
+   "end": 23.069,
+   "scene": 4
+  },
+  {
+   "text": "LogNorth",
+   "start": 23.069,
+   "end": 23.744,
+   "scene": 4
+  },
+  {
+   "text": "until",
+   "start": 23.744,
+   "end": 24.006,
+   "scene": 4
+  },
+  {
+   "text": "the",
+   "start": 24.006,
+   "end": 24.144,
+   "scene": 4
+  },
+  {
+   "text": "alert",
+   "start": 24.144,
+   "end": 24.469,
+   "scene": 4
+  },
+  {
+   "text": "clears.",
+   "start": 24.469,
+   "end": 25.169,
+   "scene": 4
+  },
+  {
+   "text": "Fixed",
+   "start": 25.641,
+   "end": 25.916,
+   "scene": 5
+  },
+  {
+   "text": "by",
+   "start": 25.916,
+   "end": 26.091,
+   "scene": 5
+  },
+  {
+   "text": "breakfast.",
+   "start": 26.091,
+   "end": 26.866,
+   "scene": 5
+  },
+  {
+   "text": "You",
+   "start": 26.991,
+   "end": 27.116,
+   "scene": 5
+  },
+  {
+   "text": "wake",
+   "start": 27.116,
+   "end": 27.304,
+   "scene": 5
+  },
+  {
+   "text": "up",
+   "start": 27.304,
+   "end": 27.466,
+   "scene": 5
+  },
+  {
+   "text": "to",
+   "start": 27.466,
+   "end": 27.554,
+   "scene": 5
+  },
+  {
+   "text": "a",
+   "start": 27.554,
+   "end": 27.641,
+   "scene": 5
+  },
+  {
+   "text": "closed",
+   "start": 27.641,
+   "end": 28.066,
+   "scene": 5
+  },
+  {
+   "text": "incident.",
+   "start": 28.066,
+   "end": 28.816,
+   "scene": 5
+  },
+  {
+   "text": "Your",
+   "start": 28.924,
+   "end": 29.087,
+   "scene": 6
+  },
+  {
+   "text": "first",
+   "start": 29.087,
+   "end": 29.374,
+   "scene": 6
+  },
+  {
+   "text": "app",
+   "start": 29.374,
+   "end": 29.587,
+   "scene": 6
+  },
+  {
+   "text": "is",
+   "start": 29.587,
+   "end": 29.737,
+   "scene": 6
+  },
+  {
+   "text": "free.",
+   "start": 29.737,
+   "end": 30.299,
+   "scene": 6
+  },
+  {
+   "text": "Install",
+   "start": 30.502,
+   "end": 30.914,
+   "scene": 6
+  },
+  {
+   "text": "it",
+   "start": 30.914,
+   "end": 31.002,
+   "scene": 6
+  },
+  {
+   "text": "at",
+   "start": 31.002,
+   "end": 31.102,
+   "scene": 6
+  },
+  {
+   "text": "lognorth.com.",
+   "start": 31.102,
+   "end": 32.427,
+   "scene": 6
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+node_modules/
+out/*
+!out/sb/
+!out/sb-suppy/
+out/sb/*.html
+out/sb-suppy/*.html
+.backup-*/
+research/**/*.mp4
+research/**/*.mp3
+research/**/*.wav
+research/**/*.mov
+*.log

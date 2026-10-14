@@ -1,0 +1,572 @@
+ 
+ 
+ 
+ UGC brief templates for product videos 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {
+ "imports": {
+ "application": "/assets/application-2f71c6db.js",
+ "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+ "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+ "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+ "controllers/application": "/assets/controllers/application-3affb389.js",
+ "controllers/card_controller": "/assets/controllers/card_controller-6445f325.js",
+ "controllers/draft_poll_controller": "/assets/controllers/draft_poll_controller-aa5cd52d.js",
+ "controllers/hello_controller": "/assets/controllers/hello_controller-708796bd.js",
+ "controllers": "/assets/controllers/index-ee64e1f1.js",
+ "controllers/menu_controller": "/assets/controllers/menu_controller-2619344d.js",
+ "controllers/otp_controller": "/assets/controllers/otp_controller-6a3499af.js",
+ "controllers/player_controller": "/assets/controllers/player_controller-cf15ab9c.js",
+ "controllers/poster_controller": "/assets/controllers/poster_controller-b8b6c7fa.js",
+ "controllers/preview_controller": "/assets/controllers/preview_controller-199955f3.js",
+ "controllers/rail_controller": "/assets/controllers/rail_controller-31736afd.js",
+ "controllers/typewriter_controller": "/assets/controllers/typewriter_controller-a219bcc2.js"
+ }
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ 
+ 
+ For businesses 
+ Price 
+ For creators 
+ Sign in 
+ Ask for an invite 
+ 
+ 
+ 
+ 
+ 
+ UGC brief templates for product videos 
+ A brief is one or two sentences. Choose your kind of product, start from an example, and post it. 
+ 
+ Apps &amp; software 
+ 
+ 
+ Brief template for a budgeting app 
+ Ask for a screen recording of one task from start to finish, with the creator&#39;s voice over it. One task shown well is better than a tour of every screen. 
+ 
+ 
+ Brief template for a booking tool for hair salons 
+ Say who uses the tool, so a creator who knows that work answers. Ask them to show the problem first, and then the one screen that solves it. 
+ 
+ 
+ Brief template for a browser extension that blocks distracting sites 
+ Ask the creator to install it on camera, so the buyer sees how short that is. Then ask for the same page with the extension off and on. 
+ 
+ 
+ Brief template for a video editor for Mac 
+ Say if it runs on Mac or on Windows, so the creator can run it. Ask for a real piece of work made with it, from the empty file to the result. 
+ 
+ 
+ Brief template for an online course on photo editing 
+ Ask the creator to take one lesson and to show what they made after it. Give access to the whole course, and say which lessons the video may show. 
+ 
+ 
+ Brief template for a Notion template for planning the week 
+ An empty template shows nothing. Ask the creator to fill it with their own week, on screen. Say which program the buyer needs to open it. 
+ 
+ 
+ 
+ 
+ Beauty &amp; skincare 
+ 
+ 
+ Brief template for a vitamin C serum 
+ Ask the creator to show the texture on skin, and to say where the serum goes in the routine. A serum ad that only shows the bottle tells nothing. 
+ 
+ 
+ Brief template for a daily moisturizer 
+ Ask for skin before and after one use, in the same light. Say the skin type the cream is for, so the right creator answers. 
+ 
+ 
+ Brief template for an SPF 50 sunscreen 
+ The two worries are a white cast and a greasy feel. Ask the creator to show both on camera, outdoors if possible. Do not ask for claims about sun protection that your label does not make. 
+ 
+ 
+ Brief template for a gentle face cleanser 
+ A cleanser is hard to show. Ask for the lather, the rinse, and the skin right after. A night routine works better than a product shot. 
+ 
+ 
+ Brief template for a clay face mask 
+ A mask is the easiest product to film, because the face changes. Ask for putting it on, waiting, and taking it off, cut short. 
+ 
+ 
+ Brief template for a cream blush 
+ Say the shades you will send and the skin tones you want to show. Ask for the product going on in real time, not only the finished look. 
+ 
+ 
+ Brief template for a leave-in hair mask 
+ Say the hair type the product is for. Ask for the hair before, the product going in, and the hair dry, in the same light. 
+ 
+ 
+ Brief template for an eau de parfum 
+ Nobody can smell a video. Ask the creator to say what it smells like, when they wear it, and how long it stays. 
+ 
+ 
+ 
+ 
+ Fashion &amp; accessories 
+ 
+ 
+ Brief template for a printed cotton t-shirt 
+ Ask the creator to wear it, move in it, and show the print up close. Ask them to say their height and the size they wear, so a buyer can judge the fit. 
+ 
+ 
+ Brief template for a linen summer dress 
+ Ask for the dress on the body, from the front, the side, and the back, while the creator walks. Ask them to say their height and the size they wear. 
+ 
+ 
+ Brief template for a pair of leather shoes 
+ Ask for the shoes on the feet, walking, filmed from near the ground. Ask the creator to say if the size runs small or large. 
+ 
+ 
+ Brief template for a leather tote bag 
+ A photo does not tell the size of a bag. Ask the creator to carry it, and to put in what fits, like a book, a bottle, and keys. 
+ 
+ 
+ Brief template for a silver necklace 
+ Jewelry is small, so ask for close shots on the skin, in daylight. Ask for one shot of the whole outfit too, so the size is clear. 
+ 
+ 
+ Brief template for a steel watch 
+ Ask for the watch on the wrist, with a sleeve and without one. Ask the creator to show the clasp and how to adjust the strap. 
+ 
+ 
+ Brief template for an embroidered cap 
+ Ask for the cap on the head, from the front and from the side, and the embroidery up close. Ask the creator to show how the back adjusts. 
+ 
+ 
+ Brief template for a one-piece swimsuit 
+ Ask for the swimsuit on the body, in daylight, while the creator moves. Ad platforms have rules about how much skin an ad shows, so write in the brief what the video may show. 
+ 
+ 
+ 
+ 
+ Finance &amp; business 
+ 
+ 
+ Brief template for a budgeting app for couples 
+ Ask for a screen recording of one real task, such as adding an expense, with the creator&#39;s voice over it. Ask them to use sample numbers, not their own accounts. 
+ 
+ 
+ Brief template for a monthly bookkeeping service for small shops 
+ A service has nothing to hold. Ask the creator to tell what they did before, what they send you now, and what they get back each month. Give them a real sample report to show. 
+ 
+ 
+ Brief template for a tax filing service for freelancers 
+ Ask the creator to show the steps on screen, from the first question to the finished return, with sample data. Do not ask them to promise a refund or a saving. 
+ 
+ 
+ Brief template for a course on personal finance 
+ Ask the creator to take one lesson and tell one thing they learned from it. Ask them to show the lesson list, so people see what is inside. 
+ 
+ 
+ Brief template for a book about pricing for small businesses 
+ Ask the creator to read one idea from the book and say how they used it. A book held up to the camera says nothing. 
+ 
+ 
+ Brief template for a budget spreadsheet template 
+ Ask for a screen recording of the creator filling in the template from empty. Ask them to show the one sheet that people will open every week. 
+ 
+ 
+ Brief template for a coaching program for new shop owners 
+ Ask the creator to say who the program is for and what happens in one session. Do not ask them to promise sales or income. 
+ 
+ 
+ Brief template for a weekly newsletter about money 
+ Ask the creator to open one issue on screen and read the part they liked. Say how often it comes and what it costs, so nobody is surprised. 
+ 
+ 
+ 
+ 
+ Fitness &amp; wellness 
+ 
+ 
+ Brief template for a vegan protein powder 
+ The two worries are the taste and the lumps. Ask the creator to mix it on camera, drink it, and say what it tastes like. 
+ 
+ 
+ Brief template for a magnesium supplement 
+ Ask the creator to show when and how they take it in their day. Do not ask them to say that it treats, cures, or prevents anything. 
+ 
+ 
+ Brief template for a pair of gym leggings 
+ Ask for the clothes in a real workout, with a squat, a stretch, and a run. A buyer wants to know if the fabric stays in place and if it shows through. 
+ 
+ 
+ Brief template for a cork yoga mat 
+ Ask the creator to hold a pose where hands and feet slip on a bad mat. Ask them to roll it up and carry it, so the thickness and the weight are clear. 
+ 
+ 
+ Brief template for a set of resistance bands 
+ Ask for three exercises with good form, a few seconds each. Ask the creator to say which band they use for each one. 
+ 
+ 
+ Brief template for a compact massage gun 
+ Ask for the gun in use on a leg or a shoulder, with the real sound, because buyers ask how loud it is. Do not ask for claims about healing an injury. 
+ 
+ 
+ Brief template for an insulated steel water bottle 
+ Ask the creator to fill the bottle, close it, and turn it upside down. Then ask for the bottle in a gym bag, so the size is clear. 
+ 
+ 
+ Brief template for a home workout plan 
+ Ask the creator to do one session from the plan, and to show the screen or the page they follow. Do not ask them to promise a result. 
+ 
+ 
+ 
+ 
+ Food &amp; drink 
+ 
+ 
+ Brief template for a cold brew coffee 
+ Ask the creator to make the coffee on camera, the way a buyer does at home. Ask them to say what it tastes like, because a bag or a bottle shows nothing. 
+ 
+ 
+ Brief template for a loose leaf green tea 
+ Ask for the leaves up close, the water going in, and the color in a clear cup. Ask the creator to say when in the day they drink it. 
+ 
+ 
+ Brief template for a habanero hot sauce 
+ Ask the creator to put the sauce on real food and eat it on camera. Ask them to say how hot it is next to a sauce that people know. 
+ 
+ 
+ Brief template for an oat and nut snack bar 
+ Ask the creator to open the bar, break it in two, and show the inside. Ask them to say where they eat it, like at the desk or after the gym. 
+ 
+ 
+ Brief template for a dark chocolate bar 
+ Ask for the sound of the bar when it breaks, and a close shot of the inside. Tell the creator to keep it cool, because melted chocolate looks bad on camera. 
+ 
+ 
+ Brief template for a taco spice mix 
+ A jar of spice shows nothing. Ask for one simple dish cooked with it, from the raw food to the plate, cut short. 
+ 
+ 
+ Brief template for a canned sparkling tea 
+ Ask for the can cold, the sound when it opens, and the drink in a glass, so the color shows. Ask the creator to say how sweet it is. 
+ 
+ 
+ Brief template for a bottle of red wine 
+ Ask for the bottle opened and poured at a table with food, and for the taste in plain words. The creator must be of legal drinking age, and the video must not show anyone drunk. 
+ 
+ 
+ 
+ 
+ Gaming 
+ 
+ 
+ Brief template for a co-op puzzle game for PC 
+ Ask for real play that the creator records, with their voice and their reactions. Say which level or which moment to show, because the first minutes of a game are often the slowest. 
+ 
+ 
+ Brief template for a free word game for phones 
+ Ask for a screen recording with the creator&#39;s hands or face in the frame. Ask for one full round, so people see how the game plays and not only the menu. 
+ 
+ 
+ Brief template for a card game for four players 
+ Ask for a real round with other people at the table. Ask the creator to explain one turn in a few seconds, because people buy a game they understand. 
+ 
+ 
+ Brief template for a gaming chair with lumbar support 
+ Ask the creator to sit in it and to move every part that adjusts. Say the height and weight the chair is made for. Do not ask for claims about back pain. 
+ 
+ 
+ Brief template for a compact mechanical keyboard 
+ People want to hear it. Ask for the sound of typing with no music, and for the keys up close. Say which switches you will send. 
+ 
+ 
+ Brief template for a 27-inch gaming monitor 
+ A phone camera does not show a refresh rate well. Ask for the monitor on a real desk, a game running on it, and the ports at the back. Ask the creator to say what changed for them. 
+ 
+ 
+ Brief template for a USB microphone for streaming 
+ Ask the creator to record their voice with their old microphone first, then with yours, in the same room. Ask for no filters on the sound. 
+ 
+ 
+ 
+ 
+ Home &amp; lifestyle 
+ 
+ 
+ Brief template for a lavender scented candle 
+ Nobody can smell a video. Ask the creator to say what the candle smells like and how strong it is in the room, and to show it lit with someone near it. 
+ 
+ 
+ Brief template for a linen bedding set 
+ Ask the creator to make the bed on camera and to touch the fabric up close. Ask for daylight, so the color is the real one. 
+ 
+ 
+ Brief template for a cast iron frying pan 
+ Ask the creator to cook one thing that sticks, like an egg, and to clean the pan after. Send the care rules first, so the video does not show a wrong use. 
+ 
+ 
+ Brief template for a handmade ceramic mug 
+ Ask for the mug in the hand, so the size is clear, and the glaze up close in daylight. A morning coffee at home works better than a product shot. 
+ 
+ 
+ Brief template for a rechargeable table lamp 
+ Ask for the lamp at night, off and then on, in a real room. If it has more than one level of light, ask the creator to show each one. 
+ 
+ 
+ Brief template for a washable cotton rug 
+ Ask for the rug in a room with furniture, so the size is clear, and a hand on it up close. If the rug is washable, ask the creator to wash it and show it after. 
+ 
+ 
+ Brief template for an oak side table 
+ If the buyer assembles the table, ask the creator to assemble it on camera, sped up. Then ask for the table in use, with things on it, so the size is clear. 
+ 
+ 
+ Brief template for a multi-surface cleaning spray 
+ Ask for a dirty surface before and after, in one shot with no cut. Do not ask for claims that your label does not make, such as killing germs. 
+ 
+ 
+ 
+ 
+ Parents &amp; kids 
+ 
+ 
+ Brief template for a soft baby carrier 
+ Ask the creator to put the carrier on alone, on camera, following your instructions. Say the weight and age range it is for, and ask for only the positions your manual allows. 
+ 
+ 
+ Brief template for a wooden stacking toy 
+ Say the age the toy is for, so a creator with a child of that age answers. Ask for the child playing with no script. A parent wants to see what a child does with it. 
+ 
+ 
+ Brief template for a baby sleep sack 
+ Say the sizes you can send. Ask for the fabric up close, how it closes, and how it goes on. If it is for sleep, ask the creator to show it used the way your label says. 
+ 
+ 
+ Brief template for a picture book about bedtime 
+ Ask the creator to read two pages aloud and to show the pictures up close. Say the age the book is for, and which pages the video may show. 
+ 
+ 
+ Brief template for a silicone suction plate 
+ Ask for a real meal, with the mess. Ask the creator to show how the product is washed, and to say the age it is for as your label states it. 
+ 
+ 
+ Brief template for a night light for the nursery 
+ Ask for the room with the product in use, at the hour a parent uses it. Ask the creator to show the setup, and to put nothing in the crib that your instructions do not allow. 
+ 
+ 
+ Brief template for a craft kit for ages 5 and up 
+ Ask for what is in the box, the child making the piece, and the piece finished. Say how long it takes and how much help from an adult it needs, so the video promises no more than that. 
+ 
+ 
+ 
+ 
+ Pets 
+ 
+ 
+ Brief template for a grain-free dog food 
+ Ask the creator to show the food in the bowl, up close, and the dog eating it. Say the size and age of dog the food is for, so the right creator answers. 
+ 
+ 
+ Brief template for a soft training treat for dogs 
+ Ask for the treat in the hand, so the size is clear, and the dog working for it. A short training moment shows more than the bag does. 
+ 
+ 
+ Brief template for a feather wand for cats 
+ Ask for the cat playing, filmed at floor level. If the cat ignores the toy on the first day, ask the creator to film again another day, not to fake it. 
+ 
+ 
+ Brief template for a hands-free dog leash 
+ Ask for a real walk outdoors, with the clip and the handle up close. Say the size of dog the leash holds. 
+ 
+ 
+ Brief template for a washable dog bed 
+ Ask the creator to show the pet lying on the bed, so the size is clear. If the cover comes off to wash, ask to see it come off. 
+ 
+ 
+ Brief template for a dog shampoo for sensitive skin 
+ Ask for the bath, the lather, and the coat dry, in the same light. Do not ask for claims about skin problems that your label does not make. 
+ 
+ 
+ Brief template for a clumping cat litter 
+ Ask the creator to pour the litter and to scoop it after a day of use. Nobody can smell a video, so ask them to say how the room smells. 
+ 
+ 
+ Brief template for a joint supplement for older dogs 
+ Ask the creator to show how they give it, in the food or by hand, and whether the pet takes it. Write &quot;no health claims beyond the label&quot; in the brief. 
+ 
+ 
+ 
+ 
+ Tech &amp; gadgets 
+ 
+ 
+ Brief template for a sports smartwatch 
+ Ask the creator to wear it for a real workout or a full day, and to show the screen in daylight. Say which phones it works with, so the right creator answers. 
+ 
+ 
+ Brief template for a magnetic power bank 
+ Ask the creator to show its size next to a phone, and to charge a phone on camera. Do not ask for a charging time or a number of charges that your product page does not state. 
+ 
+ 
+ Brief template for a slim phone case 
+ Say which phone models you have cases for. Ask for the case going on the phone, the buttons and the camera opening up close, and the phone in the hand. 
+ 
+ 
+ Brief template for a video doorbell 
+ A buyer wants to know how hard it is to install. Ask the creator to show the setup from the box to the first use, in a real home. 
+ 
+ 
+ Brief template for a mechanical keyboard 
+ A buyer wants to hear a keyboard. Ask for typing with the microphone close and no music over it. Say the layout and the language of the keys you will send. 
+ 
+ 
+ Brief template for a monitor light bar 
+ Ask for the desk before and after, from the same angle. Ask the creator to show how the product attaches and how much space it takes. 
+ 
+ 
+ Brief template for a phone tripod 
+ Ask the creator to set it up on camera, and then to show a clip filmed with it. The clip is the proof, more than the product. 
+ 
+ 
+ Brief template for a fast wall charger 
+ A charger looks like every other charger. Ask the creator to show its size in the hand, the ports, and what it charges at the same time. State only the watts on your label. 
+ 
+ 
+ 
+ 
+ Travel 
+ 
+ 
+ Brief template for a boutique hotel by the sea 
+ Ask for the room as a guest finds it, the view from the window, and the breakfast. Say the dates you can host, and whether the creator may bring one person. 
+ 
+ 
+ Brief template for a cabin in the mountains 
+ Ask the creator to walk through the place in one take, from the door to the bed. Ask for the surroundings too, and for how they got there. 
+ 
+ 
+ Brief template for a walking food tour 
+ Ask for three moments of the tour, not all of it. Ask the creator to say how long the tour takes. Tell them if the guide agrees to be on camera. 
+ 
+ 
+ Brief template for a surf lesson for beginners 
+ Ask the creator to do the activity as a beginner, and to show the first try, not only the good one. Say what you lend and what they must bring. 
+ 
+ 
+ Brief template for a small-group trip to Morocco 
+ A whole trip is many hours of video. Say which days you want filmed and how many videos you want from them. Agree before the trip on who pays for the creator&#39;s flights and meals. 
+ 
+ 
+ Brief template for a carry-on suitcase 
+ Ask the creator to pack it on camera for a real trip, and to show the wheels, the handle, and the inside. State only the measures on your product page, because each airline sets its own limits. 
+ 
+ 
+ Brief template for a travel adapter 
+ Ask for the product in use outside the home: a station, a train, a hotel room. Ask the creator to show how little space it takes in the bag. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ Small businesses say what they need. Creators send a price. You pick one. 
+ 
+ 
+ For businesses 
+ 
+ Ask for an invite 
+ How it works 
+ Brief templates 
+ Apps &amp; software Beauty &amp; skincare Fashion &amp; accessories Finance &amp; business Fitness &amp; wellness Food &amp; drink Gaming Home &amp; lifestyle Parents &amp; kids Pets Tech &amp; gadgets Travel 
+ 
+ 
+ 
+ For creators 
+ 
+ Create your profile 
+ Open briefs 
+ How it works 
+ 
+ 
+ 
+ Account 
+ 
+ Business sign in 
+ Creator sign in 
+ Ask for an invite 
+ Join as a creator 
+ 
+ 
+ 
+ 
+ © 2026 Hoodiechamp · Terms 
+ 
+ Your money never passes through us. You pay the creator yourself. 
+ Español 
+ 
+ 
+ 
+ 
+ 
+ 

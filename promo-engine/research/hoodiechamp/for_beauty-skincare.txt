@@ -1,0 +1,242 @@
+ 
+ 
+ 
+ UGC videos for beauty and skincare businesses · Hoodiechamp 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {
+ "imports": {
+ "application": "/assets/application-2f71c6db.js",
+ "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+ "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+ "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+ "controllers/application": "/assets/controllers/application-3affb389.js",
+ "controllers/card_controller": "/assets/controllers/card_controller-6445f325.js",
+ "controllers/draft_poll_controller": "/assets/controllers/draft_poll_controller-aa5cd52d.js",
+ "controllers/hello_controller": "/assets/controllers/hello_controller-708796bd.js",
+ "controllers": "/assets/controllers/index-ee64e1f1.js",
+ "controllers/menu_controller": "/assets/controllers/menu_controller-2619344d.js",
+ "controllers/otp_controller": "/assets/controllers/otp_controller-6a3499af.js",
+ "controllers/player_controller": "/assets/controllers/player_controller-cf15ab9c.js",
+ "controllers/poster_controller": "/assets/controllers/poster_controller-b8b6c7fa.js",
+ "controllers/preview_controller": "/assets/controllers/preview_controller-199955f3.js",
+ "controllers/rail_controller": "/assets/controllers/rail_controller-31736afd.js",
+ "controllers/typewriter_controller": "/assets/controllers/typewriter_controller-a219bcc2.js"
+ }
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ 
+ 
+ For businesses 
+ Price 
+ For creators 
+ Sign in 
+ Ask for an invite 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ UGC videos for beauty and skincare businesses 
+ Beauty creators bid. You pick . 
+ Say what you need for your serum, your cream, or your palette, in one sentence. Creators who already make beauty and skincare videos send a price. You choose, and you pay them directly. 
+ Free to post. $29 when you pick. 
+ Invite only. Picks are free for a year → 
+ 
+ 
+ Ask for an invite 
+ 
+ 
+ 
+ Your business 
+ 
+ 
+ 
+ 
+ Website 
+ 
+ 
+ 
+ 
+ Email 
+ 
+ 
+ 
+ 
+ 
+ 
+ We read every request. Invited businesses pick free for a year. 
+ 
+ 
+ 
+ 
+ 
+ Start from an example 
+ Choose one, change the words, and post it. It opens in the box. 
+ 
+ 
+ 3 TikTok ads for a vitamin C serum, $200 each. Hook in the first 3 seconds. Paid ads for 30 days. 
+ Choose one, change the words, and post it. It opens in the box. → 
+ 
+ 
+ 2 Instagram Reels that show a vitamin C serum in daily use. Organic posts only. 
+ Choose one, change the words, and post it. It opens in the box. → 
+ 
+ 
+ One creator for monthly videos about a vitamin C serum. 4 videos a month, for TikTok and Instagram. 
+ Choose one, change the words, and post it. It opens in the box. → 
+ 
+ 
+ 
+ 
+ A brief template for your product 
+ 
+ Serum 
+ Moisturizer 
+ Sunscreen 
+ Cleanser 
+ Face mask 
+ Makeup 
+ Hair care product 
+ Perfume 
+ 
+ 
+ 
+ By platform 
+ 
+ TikTok creators 
+ Instagram creators 
+ YouTube creators 
+ For creators 
+ 
+ 
+ 
+ Questions small businesses ask 
+ 
+ 
+ What does a beauty video from a creator cost? 
+ The creator names the price, so it differs. On Hoodiechamp you see several prices for the same brief before you choose. We publish real price ranges when enough briefs are finished. 
+ 
+ 
+ Can I use the videos as paid ads? 
+ Yes, when the brief says so. Every brief states how the videos may be used, from organic posts only to paid ads with no time limit. The creator sees that before naming a price, and the deal repeats it in writing. 
+ 
+ 
+ Do I have to send my product? 
+ Almost always. You and the creator agree on shipping by email after you pick. Hoodiechamp does not move products, files, or money. 
+ 
+ 
+ Can the creator make claims about my product? 
+ Write the rule in the brief, for example &quot;no medical claims&quot;. Cosmetic claims have legal limits in most countries, and the brand answers for its ads. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ hoodiechamp 
+ Small businesses say what they need. Creators send a price. You pick one. 
+ 
+ 
+ For businesses 
+ 
+ Ask for an invite 
+ How it works 
+ Brief templates 
+ Apps &amp; software Beauty &amp; skincare Fashion &amp; accessories Finance &amp; business Fitness &amp; wellness Food &amp; drink Gaming Home &amp; lifestyle Parents &amp; kids Pets Tech &amp; gadgets Travel 
+ 
+ 
+ 
+ For creators 
+ 
+ Create your profile 
+ Open briefs 
+ How it works 
+ 
+ 
+ 
+ Account 
+ 
+ Business sign in 
+ Creator sign in 
+ Ask for an invite 
+ Join as a creator 
+ 
+ 
+ 
+ 
+ © 2026 Hoodiechamp · Terms 
+ 
+ Your money never passes through us. You pay the creator yourself. 
+ Español 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,560 @@
+{
+ "total": 39.935,
+ "fps": 30,
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 4.525,
+   "voStart": 0.15,
+   "voEnd": 4.425
+  },
+  {
+   "start": 4.525,
+   "end": 7.22,
+   "voStart": 4.645,
+   "voEnd": 7.12
+  },
+  {
+   "start": 7.22,
+   "end": 12.415,
+   "voStart": 7.34,
+   "voEnd": 12.315
+  },
+  {
+   "start": 12.415,
+   "end": 17.06,
+   "voStart": 12.535,
+   "voEnd": 16.96
+  },
+  {
+   "start": 17.06,
+   "end": 19.505,
+   "voStart": 17.18,
+   "voEnd": 19.405
+  },
+  {
+   "start": 19.505,
+   "end": 23.6,
+   "voStart": 19.625,
+   "voEnd": 23.5
+  },
+  {
+   "start": 23.6,
+   "end": 25.645,
+   "voStart": 23.72,
+   "voEnd": 25.545
+  },
+  {
+   "start": 25.645,
+   "end": 30.14,
+   "voStart": 25.765,
+   "voEnd": 30.04
+  },
+  {
+   "start": 30.14,
+   "end": 35.335,
+   "voStart": 30.26,
+   "voEnd": 35.235
+  },
+  {
+   "start": 35.335,
+   "end": 39.935,
+   "voStart": 35.455,
+   "voEnd": 38.105
+  }
+ ],
+ "words": [
+  {
+   "text": "A",
+   "start": 0.425,
+   "end": 0.5,
+   "scene": 0
+  },
+  {
+   "text": "customer",
+   "start": 0.5,
+   "end": 1.037,
+   "scene": 0
+  },
+  {
+   "text": "asked",
+   "start": 1.037,
+   "end": 1.375,
+   "scene": 0
+  },
+  {
+   "text": "for",
+   "start": 1.375,
+   "end": 1.487,
+   "scene": 0
+  },
+  {
+   "text": "a",
+   "start": 1.487,
+   "end": 1.55,
+   "scene": 0
+  },
+  {
+   "text": "refund.",
+   "start": 1.55,
+   "end": 2.275,
+   "scene": 0
+  },
+  {
+   "text": "It's",
+   "start": 2.375,
+   "end": 2.538,
+   "scene": 0
+  },
+  {
+   "text": "under",
+   "start": 2.538,
+   "end": 2.775,
+   "scene": 0
+  },
+  {
+   "text": "40",
+   "start": 2.775,
+   "end": 3.15,
+   "scene": 0
+  },
+  {
+   "text": "cold",
+   "start": 3.15,
+   "end": 3.45,
+   "scene": 0
+  },
+  {
+   "text": "pitches.",
+   "start": 3.45,
+   "end": 4.175,
+   "scene": 0
+  },
+  {
+   "text": "Pitches",
+   "start": 4.895,
+   "end": 5.27,
+   "scene": 1
+  },
+  {
+   "text": "from",
+   "start": 5.27,
+   "end": 5.42,
+   "scene": 1
+  },
+  {
+   "text": "people",
+   "start": 5.42,
+   "end": 5.795,
+   "scene": 1
+  },
+  {
+   "text": "you've",
+   "start": 5.795,
+   "end": 6.008,
+   "scene": 1
+  },
+  {
+   "text": "never",
+   "start": 6.008,
+   "end": 6.32,
+   "scene": 1
+  },
+  {
+   "text": "met.",
+   "start": 6.32,
+   "end": 6.87,
+   "scene": 1
+  },
+  {
+   "text": "SuppyHQ",
+   "start": 7.64,
+   "end": 8.665,
+   "scene": 2
+  },
+  {
+   "text": "moves",
+   "start": 8.665,
+   "end": 9.027,
+   "scene": 2
+  },
+  {
+   "text": "the",
+   "start": 9.027,
+   "end": 9.115,
+   "scene": 2
+  },
+  {
+   "text": "pitches",
+   "start": 9.115,
+   "end": 9.54,
+   "scene": 2
+  },
+  {
+   "text": "to",
+   "start": 9.54,
+   "end": 9.665,
+   "scene": 2
+  },
+  {
+   "text": "Spam,",
+   "start": 9.665,
+   "end": 10.34,
+   "scene": 2
+  },
+  {
+   "text": "and",
+   "start": 10.44,
+   "end": 10.565,
+   "scene": 2
+  },
+  {
+   "text": "puts",
+   "start": 10.565,
+   "end": 10.815,
+   "scene": 2
+  },
+  {
+   "text": "the",
+   "start": 10.815,
+   "end": 10.915,
+   "scene": 2
+  },
+  {
+   "text": "refund",
+   "start": 10.915,
+   "end": 11.303,
+   "scene": 2
+  },
+  {
+   "text": "on",
+   "start": 11.303,
+   "end": 11.465,
+   "scene": 2
+  },
+  {
+   "text": "top.",
+   "start": 11.465,
+   "end": 12.065,
+   "scene": 2
+  },
+  {
+   "text": "Refunds,",
+   "start": 12.835,
+   "end": 13.41,
+   "scene": 3
+  },
+  {
+   "text": "upset",
+   "start": 13.46,
+   "end": 13.835,
+   "scene": 3
+  },
+  {
+   "text": "customers,",
+   "start": 13.835,
+   "end": 14.385,
+   "scene": 3
+  },
+  {
+   "text": "failing",
+   "start": 14.435,
+   "end": 14.81,
+   "scene": 3
+  },
+  {
+   "text": "payments.",
+   "start": 14.81,
+   "end": 15.46,
+   "scene": 3
+  },
+  {
+   "text": "Those",
+   "start": 15.572,
+   "end": 15.885,
+   "scene": 3
+  },
+  {
+   "text": "go",
+   "start": 15.885,
+   "end": 16.073,
+   "scene": 3
+  },
+  {
+   "text": "first.",
+   "start": 16.073,
+   "end": 16.71,
+   "scene": 3
+  },
+  {
+   "text": "Everything",
+   "start": 17.455,
+   "end": 17.843,
+   "scene": 4
+  },
+  {
+   "text": "else",
+   "start": 17.843,
+   "end": 18.08,
+   "scene": 4
+  },
+  {
+   "text": "waits",
+   "start": 18.08,
+   "end": 18.318,
+   "scene": 4
+  },
+  {
+   "text": "its",
+   "start": 18.318,
+   "end": 18.505,
+   "scene": 4
+  },
+  {
+   "text": "turn.",
+   "start": 18.505,
+   "end": 19.13,
+   "scene": 4
+  },
+  {
+   "text": "Answer",
+   "start": 19.925,
+   "end": 20.263,
+   "scene": 5
+  },
+  {
+   "text": "it",
+   "start": 20.263,
+   "end": 20.35,
+   "scene": 5
+  },
+  {
+   "text": "once.",
+   "start": 20.35,
+   "end": 21.0,
+   "scene": 5
+  },
+  {
+   "text": "Next",
+   "start": 21.138,
+   "end": 21.413,
+   "scene": 5
+  },
+  {
+   "text": "time,",
+   "start": 21.413,
+   "end": 21.7,
+   "scene": 5
+  },
+  {
+   "text": "your",
+   "start": 21.738,
+   "end": 21.838,
+   "scene": 5
+  },
+  {
+   "text": "old",
+   "start": 21.838,
+   "end": 22.05,
+   "scene": 5
+  },
+  {
+   "text": "answer",
+   "start": 22.05,
+   "end": 22.425,
+   "scene": 5
+  },
+  {
+   "text": "is",
+   "start": 22.425,
+   "end": 22.575,
+   "scene": 5
+  },
+  {
+   "text": "ready.",
+   "start": 22.575,
+   "end": 23.225,
+   "scene": 5
+  },
+  {
+   "text": "You",
+   "start": 24.02,
+   "end": 24.145,
+   "scene": 6
+  },
+  {
+   "text": "still",
+   "start": 24.145,
+   "end": 24.42,
+   "scene": 6
+  },
+  {
+   "text": "hit",
+   "start": 24.42,
+   "end": 24.645,
+   "scene": 6
+  },
+  {
+   "text": "send.",
+   "start": 24.645,
+   "end": 25.27,
+   "scene": 6
+  },
+  {
+   "text": "Your",
+   "start": 26.04,
+   "end": 26.203,
+   "scene": 7
+  },
+  {
+   "text": "AI",
+   "start": 26.203,
+   "end": 26.628,
+   "scene": 7
+  },
+  {
+   "text": "agent",
+   "start": 26.628,
+   "end": 27.015,
+   "scene": 7
+  },
+  {
+   "text": "can",
+   "start": 27.015,
+   "end": 27.14,
+   "scene": 7
+  },
+  {
+   "text": "draft.",
+   "start": 27.14,
+   "end": 27.815,
+   "scene": 7
+  },
+  {
+   "text": "Sending",
+   "start": 27.965,
+   "end": 28.44,
+   "scene": 7
+  },
+  {
+   "text": "is",
+   "start": 28.44,
+   "end": 28.553,
+   "scene": 7
+  },
+  {
+   "text": "a",
+   "start": 28.553,
+   "end": 28.653,
+   "scene": 7
+  },
+  {
+   "text": "separate",
+   "start": 28.653,
+   "end": 29.015,
+   "scene": 7
+  },
+  {
+   "text": "permission.",
+   "start": 29.015,
+   "end": 29.79,
+   "scene": 7
+  },
+  {
+   "text": "$29",
+   "start": 30.51,
+   "end": 31.448,
+   "scene": 8
+  },
+  {
+   "text": "a",
+   "start": 31.448,
+   "end": 31.51,
+   "scene": 8
+  },
+  {
+   "text": "month.",
+   "start": 31.51,
+   "end": 32.135,
+   "scene": 8
+  },
+  {
+   "text": "Free",
+   "start": 32.298,
+   "end": 32.848,
+   "scene": 8
+  },
+  {
+   "text": "until",
+   "start": 32.848,
+   "end": 33.123,
+   "scene": 8
+  },
+  {
+   "text": "you've",
+   "start": 33.123,
+   "end": 33.285,
+   "scene": 8
+  },
+  {
+   "text": "talked",
+   "start": 33.285,
+   "end": 33.585,
+   "scene": 8
+  },
+  {
+   "text": "to",
+   "start": 33.585,
+   "end": 33.71,
+   "scene": 8
+  },
+  {
+   "text": "more",
+   "start": 33.71,
+   "end": 33.923,
+   "scene": 8
+  },
+  {
+   "text": "than",
+   "start": 33.923,
+   "end": 34.073,
+   "scene": 8
+  },
+  {
+   "text": "10",
+   "start": 34.073,
+   "end": 34.335,
+   "scene": 8
+  },
+  {
+   "text": "people.",
+   "start": 34.335,
+   "end": 34.985,
+   "scene": 8
+  },
+  {
+   "text": "Start",
+   "start": 35.73,
+   "end": 35.955,
+   "scene": 9
+  },
+  {
+   "text": "free",
+   "start": 35.955,
+   "end": 36.168,
+   "scene": 9
+  },
+  {
+   "text": "at",
+   "start": 36.168,
+   "end": 36.255,
+   "scene": 9
+  },
+  {
+   "text": "suppyhq.com.",
+   "start": 36.255,
+   "end": 37.855,
+   "scene": 9
+  }
+ ]
+}
