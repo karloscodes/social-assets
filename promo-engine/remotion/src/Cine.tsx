@@ -16,7 +16,7 @@ const Clip: React.FC<{ s: Shot; fade?: number; filter?: string }> = ({ s, fade =
   const f = useCurrentFrame();
   const z = s.zoom ?? [1.04, 1.12];
   const sc = interpolate(f, [0, s.len], z, cl);
-  const o = ts(f, 0, fade) * (1 - ts(f, s.len - fade, s.len));
+  const o = (s.from === 0 ? 1 : ts(f, 0, fade)) * (1 - ts(f, s.len - fade, s.len));
   return <AbsoluteFill style={{ opacity: o }}>
     <AbsoluteFill style={{ transform: `scale(${sc}) translateY(${interpolate(f, [0, s.len], [0, s.panY ?? -20], cl)}px)` }}>
       <OffthreadVideo src={staticFile(`cine/${s.clip}.mp4`)} startFrom={s.start ?? 0} muted style={{ width: 1080, height: 1920, objectFit: "cover", filter }} />
@@ -64,12 +64,12 @@ export const LogNorth3am: React.FC = () => {
     <div style={{ position: "absolute", left: SX, top: 420, opacity: ts(f, 10, 30) * (1 - endO) }}><LNMark size={44} /></div>
     <Line font={SANS} a={-10} b={150}>Alert at <span style={{ color: LN.acc }}>3am.</span></Line>
     <Pop a={30} b={150} top={560}><Term rows={[{ t: "[lognorth] alert", c: LN.acc }, { t: "/checkout 8% vs 1%", c: "#fda4af" }]} /></Pop>
-    <Line font={SANS} a={150} b={300} size={80}>LogNorth wakes a <span style={{ color: LN.acc }}>Grok Bot</span> routine.</Line>
-    <Pop a={180} b={300} top={560}><Term rows={[{ t: "webhook  POST to the routine", c: LN.sub }, { t: "grok bot investigate", c: LN.fg }, { t: "logs, trace, commits", c: LN.sub }]} /></Pop>
-    <Line font={SANS} a={300} b={450} size={80}>It writes the fix, <span style={{ color: LN.acc }}>with a test.</span></Line>
-    <Pop a={330} b={450} top={560}><Term rows={[{ t: "fix branch + failing test", c: LN.sub }, { t: "pull request #412", c: LN.fg }, { t: "with the evidence", c: LN.sub }]} /></Pop>
-    <Line font={SANS} a={450} b={600} size={80}>LogNorth watches until it <span style={{ color: LN.acc }}>clears.</span></Line>
-    <Pop a={480} b={600} top={560}><Term rows={[{ t: "[lognorth] verify", c: LN.acc }, { t: "0.9% since the deploy", c: LN.fg }, { t: "closed · report sent", c: LN.acc }]} /></Pop>
+    <Line font={SANS} a={150} b={300} size={84}>LogNorth notifies <span style={{ color: LN.acc }}>Grok Bot.</span></Line>
+    <Pop a={180} b={300} top={560}><Term rows={[{ t: "[lognorth] webhook", c: LN.acc }, { t: "POST to the routine", c: LN.fg }, { t: "→ grok bot", c: LN.sub }]} /></Pop>
+    <Line font={SANS} a={300} b={450} size={80}>Grok Bot opens a PR <span style={{ color: LN.acc }}>and deploys.</span></Line>
+    <Pop a={330} b={450} top={560}><Term rows={[{ t: "grok bot", c: LN.sub }, { t: "pull request #412 · with a test", c: LN.fg }, { t: "CI, merge, deploy", c: LN.acc }]} /></Pop>
+    <Line font={SANS} a={450} b={600} size={80}>Then it watches until <span style={{ color: LN.acc }}>it's fixed.</span></Line>
+    <Pop a={480} b={600} top={560}><Term rows={[{ t: "grok bot · watching", c: LN.sub }, { t: "0.9% since the deploy", c: LN.fg }, { t: "alert clears", c: LN.acc }]} /></Pop>
     <Line font={SANS} a={600} b={740}>Fixed by <span style={{ color: LN.acc }}>breakfast.</span></Line>
     {/* end card */}
     <AbsoluteFill style={{ opacity: endO * (1 - ts(f, LN_LEN - 12, LN_LEN - 1)), background: "rgba(12,10,9,0.9)" }}>
@@ -90,11 +90,11 @@ const HoodLogo: React.FC<{ s: number }> = ({ s }) => (
     <g transform="translate(4 7) scale(.875)"><path d="M32 2.5c-14.5 0-24.5 10.5-24.5 25 0 5.5 1.4 10.5 3.8 14.5C3.5 45.5-2 51.5-2 60.5V70h68v-9.5c0-9-5.5-15-13.3-18.5 2.4-4 3.8-9 3.8-14.5 0-14.5-10-25-24.5-25Z" fill="#fff" /><ellipse cx="32" cy="27.5" rx="16" ry="16.5" fill={HB} /><path d="M27.5 47.5v10M36.5 47.5v6" stroke={HB} strokeWidth="3.5" strokeLinecap="round" /></g></svg>
 );
 const HT = {
-  en: { l1: <>Your product.<br /><span style={{ color: HL }}>Their camera.</span></>, l2: <>Say what you need in <span style={{ color: HL }}>one sentence.</span></>, brief: "“3 TikTok ads for my candle”",
-    l3: <>Creators who fit send a <span style={{ color: HL }}>price.</span></>, price: "Price", l4: <>Prices, not pitches. <span style={{ color: HL }}>You pick.</span></>, picked: "Picked ✓",
+  en: { l1: [["Your", "product."], ["Their", "camera."]] as string[][], l2: <>Say what you need. <span style={{ color: HL }}>One sentence.</span></>, brief: "“3 TikTok ads for my candle”",
+    l3: <>Creators send a <span style={{ color: HL }}>price.</span></>, price: "Price", l4: <>No pitches. <span style={{ color: HL }}>You pick.</span></>, picked: "Picked ✓",
     e1: <>Creators bid.<br />You pick.</>, e2: "Ask for an invite at", ex: "Example" },
-  es: { l1: <>Tu producto.<br /><span style={{ color: HL }}>Su cámara.</span></>, l2: <>Di lo que necesitas en <span style={{ color: HL }}>una frase.</span></>, brief: "“3 anuncios de TikTok para mi vela”",
-    l3: <>Los creadores que encajan te mandan un <span style={{ color: HL }}>precio.</span></>, price: "Precio", l4: <>Precios, no propuestas. <span style={{ color: HL }}>Tú eliges.</span></>, picked: "Elegido ✓",
+  es: { l1: [["Tu", "producto."], ["Su", "cámara."]] as string[][], l2: <>Di lo que necesitas. <span style={{ color: HL }}>Una frase.</span></>, brief: "“3 anuncios de TikTok para mi vela”",
+    l3: <>Los creadores te mandan un <span style={{ color: HL }}>precio.</span></>, price: "Precio", l4: <>Sin propuestas. <span style={{ color: HL }}>Tú eliges.</span></>, picked: "Elegido ✓",
     e1: <>Los creadores ofertan.<br />Tú eliges.</>, e2: "Pide una invitación en", ex: "Ejemplo" },
 };
 export const HW_LEN = 750;
@@ -108,15 +108,16 @@ export const HoodWorld: React.FC<{ lang?: "en" | "es" }> = ({ lang = "en" }) => 
   ];
   const endO = ts(f, 600, 625);
   const sz = lang === "es" ? 78 : 86;
-  const tag = <div style={{ position: "absolute", left: SX, top: 420, display: "flex", alignItems: "center", gap: 18, opacity: ts(f, 8, 28) * (1 - endO) }}>
-    <HoodLogo s={64} /><span style={{ fontFamily: "Bricolage, Inter, sans-serif", fontSize: 44, fontWeight: 800, color: "#fff" }}>hoodiechamp</span>
-    <span style={{ marginLeft: 14, background: HL, color: INK, fontFamily: SANS, fontWeight: 800, fontSize: 30, padding: "4px 14px", borderRadius: 10 }}>{t.ex}</span></div>;
+  const tag = <><div style={{ position: "absolute", left: SX, top: 1370, opacity: 0.85 * (1 - endO), background: "rgba(0,0,0,0.45)", color: "#fff", fontFamily: SANS, fontWeight: 700, fontSize: 26, padding: "4px 14px", borderRadius: 10 }}>{t.ex}</div>
+    <div style={{ position: "absolute", left: SX, top: 1290, display: "flex", alignItems: "center", gap: 14, opacity: ts(f, 20, 36) * (1 - ts(f, 136, 150)) }}><HoodLogo s={52} /><span style={{ fontFamily: SANS, fontSize: 40, fontWeight: 800, color: "#fff" }}>hoodiechamp</span></div></>;
   const cards = ["@nora.makes", "@lila.films", "@sam.ugc"];
   return <AbsoluteFill style={{ background: "#0b0d1a" }}>
     {shots.map((s, i) => <Sequence key={i} from={s.from} durationInFrames={s.len}><Clip s={s} /></Sequence>)}
     <Grade />
     {tag}
-    <Line font={SANS} a={-10} b={150} size={96}>{t.l1}</Line>
+    <div style={{ position: "absolute", left: SX, width: SW, top: 1010, fontFamily: SANS, fontSize: 96, fontWeight: 800, letterSpacing: -2.5, lineHeight: 1.04, color: "#fff", textShadow: "0 4px 30px rgba(0,0,0,0.5)", opacity: 1 - ts(f, 136, 150) }}>
+      {t.l1.map((ln, li) => <div key={li} style={{ color: li ? HL : "#fff" }}>{ln.map((w, wi) => { const k = li * 2 + wi; const p = ts(f + 6, k * 4, k * 4 + 12);
+        return <span key={wi} style={{ display: "inline-block", marginRight: 22, opacity: p, transform: `translateY(${(1 - p) * 34}px) scale(${0.94 + 0.06 * p})` }}>{w}</span>; })}</div>)}</div>
     <Line font={SANS} a={150} b={300} size={sz}>{t.l2}</Line>
     <Pop a={185} b={300} top={560}><div style={{ background: "#fff", color: INK, fontFamily: SANS, fontSize: 40, fontWeight: 700, padding: "26px 32px", borderRadius: 26, width: SW }}>{t.brief}</div></Pop>
     <Line font={SANS} a={300} b={450} size={sz}>{t.l3}</Line>

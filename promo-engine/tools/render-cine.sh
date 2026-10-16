@@ -12,6 +12,6 @@ job(){ comp=$1; name=$2; track=$3; ss=$4
     ffmpeg -y -v error -i $O/$name-vertical.mp4 -ss $ss -i $track -map 0:v -map 1:a -c:v copy -af "loudnorm=I=-19:TP=-1.5:LRA=11,afade=t=in:d=0.8,afade=t=out:st=$st:d=2.7,apad" -t $d -ar 48000 -c:a aac -b:a 192k -movflags +faststart $O/$name-music-vertical.mp4; fi
   echo done $name $d; }
 A=../research/hoodiechamp
-job LogNorth3am lognorth-3am-cinematic-v1 $A/music/holizna-the-good-times.mp3 4
-job HoodWorldEn hoodiechamp-world-v1-en $A/audio/picnic.mp3 0.70
-job HoodWorldEs hoodiechamp-world-v1-es $A/audio/picnic.mp3 0.70
+job LogNorth3am lognorth-3am-cinematic-v2 $A/music/holizna-the-good-times.mp3 4
+job HoodWorldEn hoodiechamp-world-v2-en $A/audio/picnic.mp3 0.70
+job HoodWorldEs hoodiechamp-world-v2-es $A/audio/picnic.mp3 0.70
