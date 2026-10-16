@@ -21,3 +21,6 @@ Originals are in research/stock-video/ (not in git). The 1080x1920 crops are in 
 | 7514219 | hoodiechamp world beat 4 (tripod setup) | https://www.pexels.com/video/woman-setting-up-a-smartphone-on-a-tripod-7514219/ | Kampus Production |
 | 7514332 | downloaded, not used (weak crop) | https://www.pexels.com/video/a-woman-making-a-product-review-7514332/ | Kampus Production |
 Music (CC0): LogNorth music version uses HoliznaCC0 "The Good Times" from 0:04. hoodiechamp world uses Loyalty Freak Music "Go to the Picnic" from 0.70s. Both have a 2.7s fade that ends 0.3s before the last frame, at -19 LUFS.
+
+# Pomotto demo 1 "One ping" (Oct 16, 2026)
+Music (CC0 1.0): Holizna (HoliznaCC0), "Ocean Memory", album Ocean Memory (Lo-fi Chill), https://freemusicarchive.org/music/holiznacc0/ocean-memory-lo-fi-chill/ , used from 0:02, 1.2s fade-in, 2.8s fade-out ending 0.4s before the last frame, -20 LUFS target (-17.8 integrated with chime). Chime: synthesized locally (sine partials, research/pomotto/music/chime.wav), at 18.3s.

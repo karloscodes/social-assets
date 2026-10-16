@@ -20,6 +20,7 @@ import { HoodPain, PAIN_LEN, HoodCreators, CRE_LEN, CRE2_LEN } from "./HoodSlide
 import { HoodLaunchEs, LAUNCH_ES_LEN } from "./HoodLaunchEs";
 import { MissedRefund, MR_LEN } from "./MissedRefund";
 import { LogNorth3am, LN_LEN, HoodWorld, HW_LEN } from "./Cine";
+import { PomottoOnePing, POM1_LEN } from "./Pomotto";
 import type { PromoProps } from "./types";
 
 const placeholder: PromoProps = {
@@ -46,6 +47,7 @@ export const RemotionRoot: React.FC = () => (
       fps: props.timing.fps, width: props.width, height: props.height,
     })}
   />
+  <Composition id="PomottoOnePing" component={PomottoOnePing} fps={30} width={1080} height={1920} durationInFrames={POM1_LEN} />
   <Composition id="SuppyLoop" component={SuppyLoop} fps={30} width={1080} height={1920} durationInFrames={LOOP} />
   <Composition id="SuppyLoop2" component={SuppyLoop2} fps={30} width={1080} height={1920} durationInFrames={LOOP2} />
   <Composition id="SuppyLoop3" component={SuppyLoop3} fps={30} width={1080} height={1920} durationInFrames={LOOP3} />
