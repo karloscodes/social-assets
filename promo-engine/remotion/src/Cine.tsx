@@ -92,10 +92,10 @@ const HoodLogo: React.FC<{ s: number }> = ({ s }) => (
 const HT = {
   en: { l1: [["Your", "product."], ["Their", "camera."]] as string[][], l2: <>Say what you need. <span style={{ color: HL }}>One sentence.</span></>, brief: "“3 TikTok ads for my candle”",
     l3: <>Creators send a <span style={{ color: HL }}>price.</span></>, price: "Price", l4: <>No pitches. <span style={{ color: HL }}>You pick.</span></>, picked: "Picked ✓",
-    e1: <>Creators bid.<br />You pick.</>, e2: "Ask for an invite at", ex: "Example" },
+    e1: <>Creators bid.<br />You pick.</>, e2: "Post what you need at", ex: "Example" },
   es: { l1: [["Tu", "producto."], ["Su", "cámara."]] as string[][], l2: <>Di lo que necesitas. <span style={{ color: HL }}>Una frase.</span></>, brief: "“3 anuncios de TikTok para mi vela”",
     l3: <>Los creadores te mandan un <span style={{ color: HL }}>precio.</span></>, price: "Precio", l4: <>Sin propuestas. <span style={{ color: HL }}>Tú eliges.</span></>, picked: "Elegido ✓",
-    e1: <>Los creadores ofertan.<br />Tú eliges.</>, e2: "Pide una invitación en", ex: "Ejemplo" },
+    e1: <>Los creadores ofertan.<br />Tú eliges.</>, e2: "Publica lo que necesitas en", ex: "Ejemplo" },
 };
 export const HW_LEN = 750;
 export const HoodWorld: React.FC<{ lang?: "en" | "es" }> = ({ lang = "en" }) => {
