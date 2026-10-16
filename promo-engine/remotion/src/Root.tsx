@@ -19,6 +19,7 @@ import { HoodLaunch4c, LAUNCH4C_LEN } from "./HoodLaunch4c";
 import { HoodPain, PAIN_LEN, HoodCreators, CRE_LEN, CRE2_LEN } from "./HoodSlides";
 import { HoodLaunchEs, LAUNCH_ES_LEN } from "./HoodLaunchEs";
 import { MissedRefund, MR_LEN } from "./MissedRefund";
+import { LogNorth3am, LN_LEN, HoodWorld, HW_LEN } from "./Cine";
 import type { PromoProps } from "./types";
 
 const placeholder: PromoProps = {
@@ -68,5 +69,8 @@ export const RemotionRoot: React.FC = () => (
   <Composition id="HoodCreators2En" component={HoodCreators} defaultProps={{ lang: "en" as const, v2: true }} fps={30} width={1080} height={1920} durationInFrames={CRE2_LEN} />
   <Composition id="HoodCreators2Es" component={HoodCreators} defaultProps={{ lang: "es" as const, v2: true }} fps={30} width={1080} height={1920} durationInFrames={CRE2_LEN} />
   <Composition id="MissedRefund" component={MissedRefund} fps={30} width={1080} height={1920} durationInFrames={MR_LEN} />
+  <Composition id="LogNorth3am" component={LogNorth3am} fps={30} width={1080} height={1920} durationInFrames={LN_LEN} />
+  <Composition id="HoodWorldEn" component={HoodWorld} defaultProps={{ lang: "en" as const }} fps={30} width={1080} height={1920} durationInFrames={HW_LEN} />
+  <Composition id="HoodWorldEs" component={HoodWorld} defaultProps={{ lang: "es" as const }} fps={30} width={1080} height={1920} durationInFrames={HW_LEN} />
 </>
 );
