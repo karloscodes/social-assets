@@ -10,3 +10,6 @@ research/**/*.mp3
 research/**/*.wav
 research/**/*.mov
 *.log
+
+!out/ideas/
+out/ideas/*.html
